@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/frank-portfolio/static/css/main.bf540ce6.css",
+    "main.js": "/frank-portfolio/static/js/main.57f115fd.js",
+    "static/media/logo-francisco-perlaza.png": "/frank-portfolio/static/media/logo-francisco-perlaza.9c7bb3e5cb10f926920f.png",
+    "static/media/imagen-logo-sena.jpg": "/frank-portfolio/static/media/imagen-logo-sena.7d7467e8622a11c57883.jpg",
+    "static/media/imagen-logo-remigton.jpg": "/frank-portfolio/static/media/imagen-logo-remigton.1c422e27cea77bbab891.jpg",
+    "static/media/imagen-logo-cisco.jpg": "/frank-portfolio/static/media/imagen-logo-cisco.bea0f640c88740ff4b9d.jpg",
+    "static/media/imagen-logo-platzi.jpg": "/frank-portfolio/static/media/imagen-logo-platzi.7ed353972d35614471fa.jpg",
+    "static/media/imagen-logo-edteam.jpg": "/frank-portfolio/static/media/imagen-logo-edteam.4e97181325e2788da900.jpg",
+    "index.html": "/frank-portfolio/index.html",
+    "main.bf540ce6.css.map": "/frank-portfolio/static/css/main.bf540ce6.css.map",
+    "main.57f115fd.js.map": "/frank-portfolio/static/js/main.57f115fd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bf540ce6.css",
+    "static/js/main.57f115fd.js"
+  ]
+}
