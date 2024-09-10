@@ -1,0 +1,108 @@
+/* Contenedor principal del footer */
+.main-container-of-footer-number-one {
+  padding: 20px;
+  margin: 0;
+  background-color: #222222;
+}
+
+/* Contenedor navegacion */
+.navigation-columns-container {
+  display: flex;
+  justify-content: space-around;  /* Ajusta el espacio entre las columnas */
+  align-items: flex-start;       /* Ajusta la alineacion vertical de las columnas */
+  flex-wrap: wrap;               /* Permite que las columnas se envuelvan a la siguiente linea si no caben en el ancho del contenedor */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Estilo para cada columna individual */
+.navigation-columns-container .information-columns {
+  flex: 1;                       /* Hace que las columnas ocupen el mismo espacio */
+  margin: 10px;                  /* Ajusta el espacio entre las columnas */
+  text-align: center;            /* Ajusta la alineación del texto dentro de las columnas */
+}
+
+/* Estilo para el enlace del logo */
+.Logo-link-footer {
+  text-decoration: none;
+  color: inherit;  /* Conserva el color del texto del enlace */
+}
+
+/* Estilo para el logo */
+.Logo-text-fp {
+  width: 100px;  /* Ajusta el ancho del logo segun tus necesidades */
+  height: auto;  /* Mantiene la proporcion del logo */
+  display: block; /* Evita el espacio extra debajo de la imagen */
+  margin: 0 auto; /* Centra el logo horizontalmente */
+}
+
+/* Estilo para la descripcion del logo */
+.text-in-logo-description {
+  margin-top: 5px; /* Ajusta el espacio entre el logo y la descripcion */
+  font-size: 15px; /* Ajusta el tamaño de la fuente de la descripcion */
+  line-height: 1.2; /* Altura de línea para mejorar la legibilidad */
+  color: #777;    /* Color del texto de la descripcion */
+}
+
+/* Estilo para las listas ul > li */
+.information-columns ul {
+  list-style-type: none; /* Quita los puntos de la lista */
+  padding: 0; /* Elimina el espacio de relleno predeterminado de la lista */
+}
+
+/* Estilo para los elementos de la lista */
+.information-columns li {
+  margin-bottom: 5px; /* Ajusta el espacio entre los elementos de la lista */
+  font-size: 15px;
+}
+
+ /* Cambio de color al pasar el cursor sobre enlaces */
+ li:hover > a:hover {
+  color: #707070; /* Color diferente al pasar el cursor */
+}
+
+/* Estilo para quitar el subrayado de los enlaces */
+.information-columns a {
+  text-decoration: none;
+  color: #777;    /* Color del texto de la descripcion */
+  cursor: pointer;
+}
+
+.title-information-sections {
+  color: #ccc;
+}
+
+/* Estilo para el contenedor de los iconos sociales */
+.container-social-icons {
+  display: flex; /* Muestra los iconos en forma horizontal */
+  justify-content: space-around; /* Ajusta el espacio entre los iconos */
+  align-items: center; /* Alinea los iconos verticalmente en el centro */
+}
+
+/* Estilo opcional para los contenedores individuales de los iconos */
+.container-columns-icons {
+  margin: 0 10px; /* Espacio entre los contenedores de los iconos */
+}
+
+/* Quitar el subrayado enlaces iconos */
+.container-social-icons a {
+  text-decoration: none;
+}
+
+/* Estilo para los iconos sociales */
+.social-icons-components {
+  font-size: 25px; /* Tamaño iconos */
+  cursor: pointer;
+}
+
+/* Estilos para el contenedor derechos de autor */
+.container-child-footer-number-two {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Estilos para el texto de derechos de autor */
+.footer-text {
+  font-size: 14px;
+  color: #777;
+}

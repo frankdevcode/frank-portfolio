@@ -1,0 +1,161 @@
+/* Estilos para el contenedor principal */
+.ecommerce-project-main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Estilos titulo principal */
+.main-title-ecommerce {
+  font-size: 28px;
+  color: #d9d9d9;
+}
+
+/* Estilos parrafos */
+.ecommerce-paragraph {
+  font-size: 16px;
+  color: #b8b8b8;
+}
+
+.line-height-ecm {
+  line-height: 1.5; /* Altura de línea para mejorar la legibilidad */
+}
+
+/* Estilos titulo dos */
+.main-title-ecommerce-two {
+  font-size: 30px; /* Tamaño de fuente para el título */
+  color: #d9d9d9;
+}
+
+.container-section-two-ecommerce-project {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+/* Estilos de cada seccion */
+.section-information-container-ecm {
+  width: 50%;
+  flex: 1;
+  margin-right: 20px;
+  padding: 0 20px 20px 20px;
+  border: 1px solid #5e5e5e;
+  border-radius: 5px;
+}
+.section-information-container-ecm:last-child {
+  margin-right: 0;
+}
+
+.container-name-label-ecm {
+  width: fit-content;
+  background-color: #5e5e5e;
+  margin: 0;
+  padding: 5px 15px 5px 15px;
+  border-radius: 0 0 5px 5px;
+}
+
+/* Etiqueta de texto */
+.ecm-text-label {
+  color: #b8b8b8;
+  margin: 0;
+}
+
+/* Estilos para el contenedor del icono HTML */
+.container-icons-in-projects-ecm {
+  align-items: center; /* Centra los elementos verticalmente */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  text-align: center;
+}
+
+/* iconos */
+.icons-for-used-technologies-ecm {
+  font-size: 100px;
+  color: #b8b8b8;
+}
+
+/* Contenedor ver mas tecnologias */
+.ecommerce-project-button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Boton ver mas tecnologias */
+.button-ecommerce-ecm {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: transparent; /* Puedes cambiar el color de fondo según tus preferencias */
+  border: 1px solid #5e5e5e;
+  color: #fff; /* Puedes cambiar el color del texto según tus preferencias */
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-ecommerce-ecm:hover {
+  background-color: #006eff;
+}
+
+.main-drop-down-information-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.dropdown-container-icons {
+  width: 50%;
+  flex: 1;
+  margin-right: 20px;
+  padding: 0 20px 20px 20px;
+  border: 1px solid #5e5e5e;
+  border-radius: 5px;
+}
+.dropdown-container-icons:last-child {
+  margin-right: 0;
+}
+
+/* Contenedor del icono - desplegable */
+.drop-down-used-technologies-icons {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+
+.container-for-the-other-technologies-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.container-title-other-tech {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 20%;
+  background-color: #444444;
+  border-radius: 4px;
+}
+
+.title-ecommerce-two {
+  font-size: 30px;
+  color: #d9d9d9;
+  margin: 0;
+}
+
+.container-sections-other-tech {
+  flex: 1;
+  margin-right: 20px;
+  padding: 0 20px 20px 20px;
+  border: 1px solid #5e5e5e;
+  border-radius: 5px;
+}
+
+.container-sections-other-tech:last-child {
+  margin-right: 0;
+}

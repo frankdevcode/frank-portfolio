@@ -1,0 +1,75 @@
+.main-container-content-home-mobile {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Contenedor del titulo principal */
+.container-title-home-mobile {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Titulo principal */
+.main-home-title-mobile {
+  margin: 20px;
+  font-size: 2.1rem;
+  color: #d9d9d9;
+}
+
+
+
+/* Secion 1 */
+/* Contenedor home: Descubre los proyectos destacados */
+.mobile-container-home-sections {
+  margin: 0;
+}
+
+/* Subcontenedor columnas */
+.mobile-subcontainer-contents-home {
+  position: relative;
+  padding: 0;
+  flex: 1;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #ff5e0013, #00000018);
+}
+
+
+
+/* Secion 2 */
+/* Contenedor home: Lista de habilidades y tecnologías */
+.mobile-container-tech-skills-list {
+  text-align: left;
+  margin-top: 50px;
+}
+
+/* Titulo */
+.mobile-title-skills-list {
+  margin: 20px 0 20px 0;
+  font-size: 2.1rem;
+  color: #d9d9d9;
+}
+
+/* Contenedor */
+.main-mobile-container-section-two-list-of-skills {
+  padding: 20px 0 20px 0;
+  border-radius: 10px;
+  margin: 10px 0;
+  background: linear-gradient(90deg, rgb(21, 21, 21), #ffffff, rgb(21, 21, 21));
+}
+
+
+
+/* Secion 3 */
+/* Contenedor home: Educación y certificaciones */
+.mobile-container-title-section-three-home {
+  text-align: left;
+  margin-top: 50px;
+}
+
+/* Cambio de imagenes en el home */
+.mobile-container-main-section-three-education {
+  display: flex;
+}

@@ -1,0 +1,79 @@
+/* Estilos generales */
+.help-center-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Estilos para el titulo */
+.tittle-help-centro {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #d9d9d9;
+}
+
+/* Estilos para subtítulos */
+.subtitles-sections-help {
+  font-size: 18px; /* Tamaño de fuente para el título */
+  color: #d9d9d9;
+}
+
+/* Estilos para los párrafos */
+.help-paragraph {
+  font-size: 16px; /* Tamaño de fuente para el contenido del párrafo */
+  line-height: 1.6; /* Altura de línea para mejorar la legibilidad */
+  margin-bottom: 15px; /* Espacio inferior entre párrafos */
+  color: #b8b8b8;
+}
+
+/* Enlaces */
+.link-help-section {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+/* Secciones específicas */
+.contact-section,
+.faq-section,
+.community-section,
+.technical-support-section {
+  border-bottom: 1px solid hsla(0, 0%, 87%, 0.288);
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+/* A qui va el formulario de contacto */
+/* Estilos de formulario de contacto (puedes personalizar según tus necesidades) */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact-form label {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}

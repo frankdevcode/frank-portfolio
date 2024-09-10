@@ -1,0 +1,146 @@
+/* src/components/HeaderMobile.css */
+
+/* Contenedor para el menú toggle */
+.menu-toggle-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #222; /* Color de fondo gris */
+  z-index: 2;
+  display: flex;
+  align-items: center; /* Alinear verticalmente */
+  padding: 10px; /* Añadir un poco de padding */
+}
+
+/* Estilos para el menú hamburguesa */
+.menu-toggle {
+  cursor: pointer;
+  z-index: 3;
+  margin-right: 10px;
+}
+
+.menu-toggle .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #f1f1f1;
+}
+
+/* Estilos para el logotipo móvil */
+.mobile-logo-link {
+  display: block;
+}
+
+.mobile-device-logo {
+  width: 80px; /* Ajusta el tamaño del logotipo según sea necesario */
+  height: auto;
+}
+
+/* Estilos para el sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -80%; /* Inicialmente oculto fuera de la vista */
+  width: 80%;
+  height: 100%;
+  background-color: #f1f1f1;
+  z-index: 4;
+  transition: left 0.3s ease;
+  box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el ancho y la altura */
+}
+
+.sidebar.active {
+  left: 0; /* Muestra el sidebar cuando está activo */
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+  background-color: #ccc; /* Fondo gris */
+  width: 100%; /* Ocupa todo el ancho */
+  box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el ancho */
+}
+
+.sidebar-greeting {
+  margin: 0;
+  font-size: 1.2rem;
+  padding: 0 15px;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  box-sizing: border-box; /* Asegura que el padding se incluya en el ancho */
+}
+
+.sidebar nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar nav ul li {
+  margin: 20px 0;
+}
+
+.sidebar nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+}
+
+/* Estilos para el icono de cierre */
+.close-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* GIRO BANNER MOBILE */
+/* Contendor de la informacion del giro banner */
+.main-container-twist-banner-mobile {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(90deg, #4B0082, #1e8fff82); /* Cambia el color de fondo según tus preferencias */
+}
+
+.container-twist-banner-mobile {
+  max-width: 1200px;
+  min-height: 350px;
+  margin: 0 auto;
+  margin-top: 70px;
+  padding: 0;
+}
+
+/* Titulo uno giro banner */
+.title-twist-banner-mobile {
+  font-size: 35px;
+  color: #f8f8f8;
+  font-weight: normal;
+}
+
+/* Titulo dos giro banner */
+.title-two-twist-banner-mobile {
+  font-size: 50px;
+  color: #006eff;
+  margin: 0;
+  font-weight: normal;
+}
+
+/* Contenedor para el nombre */
+.container-engineer-fp-twist-banner-mobile {
+  padding: 0;
+}
+
+/* Ingeniero FP */
+.text-engineer-fp-twist-banner-mobile {
+  font-size: 14px;
+  color: #949494;
+  text-align: center;
+}

@@ -1,0 +1,38 @@
+/* Estilos para el contenedor principal de la página de terminos y condiciones */
+.main-container-terms-and-conditions {
+  max-width: 1200px; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Centrar el contenedor en la página */
+  padding: 20px; /* Añadir espacio interno al contenedor */
+  border-radius: 8px; /* Esquinas redondeadas del contenedor */
+}
+
+/* Estilos para los encabezados dentro del contenedor */
+.container-main-title-conditions .main-title-conditions {
+  font-size: 28px; /* Tamaño de fuente para el encabezado principal */
+  margin-bottom: 20px; /* Espacio inferior para separar el encabezado del contenido */
+  color: #d9d9d9;
+}
+
+/* Estilos para los párrafos */
+.conditions-paragraph {
+  font-size: 16px; /* Tamaño de fuente para el contenido del párrafo */
+  line-height: 1.6; /* Altura de línea para mejorar la legibilidad */
+  margin-bottom: 15px; /* Espacio inferior entre párrafos */
+  color: #b8b8b8;
+}
+
+/* Estilos para el contenedor del título */
+.container-title-conditions {
+  margin-bottom: 20px; /* Espacio inferior para separar el título del contenido */
+}
+
+/* Estilos para el título */
+.title-conditions {
+  font-size: 18px; /* Tamaño de fuente para el título */
+  color: #d9d9d9;
+}
+
+/* Estilos para el contenedor de párrafos */
+.conditions-paragraph-container {
+  margin-bottom: 30px; /* Espacio inferior para separar el contenedor de párrafos del siguiente elemento */
+}

@@ -1,0 +1,194 @@
+/* Contenedor principal del contenido */
+.main-container-content-home {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Contenedor del titulo principal */
+.container-title-home {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Titulo principal */
+.main-home-title {
+  margin: 20px;
+  font-size: 2.1rem;
+  color: #d9d9d9;
+}
+
+/* Contenedor seccion 1 home */
+.container-one-of-home-sections {
+  display: flex;
+  margin: 0;
+}
+
+/* Transición suave para el desplazamiento del ícono al pasar el cursor */
+.container-for-start-arrows {
+  position: absolute; /* Fija la posición del ícono */
+  bottom: 5px; /* Lo coloca en la parte inferior del contenedor */
+  left: 20px; /* Lo posiciona en el extremo izquierdo del contenedor */
+  transition: transform 0.3s ease;
+  color: #006eff;
+}
+
+/* Desplaza el ícono hacia la derecha cuando se pasa el cursor sobre el contenedor */
+.child-container-project-content:hover .container-for-start-arrows {
+  transform: translateX(10px);
+  color: #d9d9d9;
+}
+
+/* Titulo decada seccion */
+.title-sections-home {
+  padding: 0;
+  color: #d9d9d9;
+  margin: 0; /* Elimina el margen predeterminado */
+  font-size: 1.5rem; /* Ajusta el tamaño del título según sea necesario */
+}
+
+/* Contenedor para el título y el icono */
+.title-icon-container {
+  display: flex; /* Utiliza flexbox para alinear los elementos horizontalmente */
+  align-items: center; /* Alinea verticalmente el icono y el título */
+}
+
+.project-icon {
+  margin-right: 10px; /* Añade espacio entre el icono y el título */
+  font-size: 64px; /* Ajusta el tamaño del icono según sea necesario */
+  color: #4B0082;
+}
+
+/* Parrafo decada seccion */
+.text-sections-home {
+  color: #afafaf;
+}
+
+/* Contenedor hijo de las columnas */
+.child-container-project-content {
+  position: relative;
+  padding: 0;
+  flex: 1;
+  margin-right: 20px;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #ff5e0013, #00000018);
+}
+.child-container-project-content:last-child {
+  margin-right: 0;
+}
+
+/* Enlaces de textos */
+.project-link {
+  text-decoration: none; /* Elimina el subrayado del enlace */
+  cursor: pointer; /* Muestra la mano al pasar el cursor sobre el enlace */
+}
+
+/* Contenedor hijo columnas link */
+.project-column {
+  padding: 20px; /* Añade espacio interno alrededor del contenido */
+  border: 1px solid #575757; /* Añade un borde gris */
+  border-radius: 10px; /* Redondea las esquinas del borde */
+  background: linear-gradient(45deg, #ff5e0013, #00000018); /* Añade un fondo degradado */
+  transition: background 0.3s ease; /* Suaviza la transición del fondo cuando se hace hover */
+
+}
+.project-column:hover {
+  background: linear-gradient(45deg, #006eff18, #ffffff18);
+}
+
+
+
+/* Sección 2 */
+/* Contenedor del titulo principal two */
+.container-two-title-home {
+  text-align: left;
+  margin-top: 50px;
+}
+
+/* Titulo */
+.main-home-title-two {
+  margin: 20px 0 20px 0;
+  font-size: 2.1rem;
+  color: #d9d9d9;
+}
+/* Titulos secciones */
+.titles-for-sections-two {
+  padding: 0;
+  border-bottom: 1px solid hsla(0, 0%, 87%, 0.288);
+  justify-content: center;
+  text-align: center;
+}
+
+/* Contenedor */
+.child-container-section-one-content {
+  display: flex;
+  padding: 20px 0 20px 0;
+  border-radius: 10px;
+  margin: 10px 0;
+  background: linear-gradient(90deg, rgb(21, 21, 21), #ffffff, rgb(21, 21, 21));
+}
+
+.container-to-handle-the-contents {
+  flex: 1;
+  margin-right: 20px;
+  border-radius: 10px;
+  padding: 0 20px 0 20px;
+  background-color: #151515;
+}
+.container-to-handle-the-contents:last-child {
+  margin-right: 0;
+}
+
+/* Estilos para el contenedor del icono */
+.icon-sessions-container-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px 0 10px;
+}
+
+/* Estilos para el icono */
+.home-session-icons {
+  width: 60px;
+  height: auto;
+  color: #b8b8b8;
+}
+
+
+
+/* Sección tres - *cambiar las clases a ingles* */
+/* Seccion para  cambio de imagenes en el home */
+.contenedor-principal {
+  display: flex;
+}
+
+.columna-izquierda {
+  width: 50%; /* Ajusta el ancho según tus necesidades */
+}
+
+.columna-derecha {
+  width: 50%; /* Ajusta el ancho según tus necesidades */
+  display: flex;
+  justify-content: center;
+}
+
+/* Información de los contenedores izquierdos */
+.informacion {
+  padding: 10px;
+  margin-bottom: 10px;
+  color: #006eff;
+}
+
+/* Vista previa al lado derecho */
+.imagen-previa {
+  max-width: 100%; /* Ajusta el ancho máximo según tus necesidades */
+  max-height: 390px; /* Ajusta la altura máxima según tus necesidades */
+}
+
+/* Realta el fondo de los contenedores */
+.informacion.resaltado {
+  background-color: #292929; /* Cambia el color de fondo cuando se selecciona */
+}
+
+  

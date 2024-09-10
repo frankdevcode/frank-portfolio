@@ -1,0 +1,112 @@
+/* Estilos para el contenedor principal de la página proyecto Frank */
+.main-container-frank-project {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Estilos titulo principal */
+.main-title-project {
+  font-size: 2.1rem;
+  color: #d9d9d9;
+  font-weight: normal;
+}
+
+
+
+/* Estilos para el contenedor principal del componente */
+.container-frank-project {
+  display: flex;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.container-sections-frank-project {
+  flex: 1;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+  padding: 20px;
+  margin: 0 auto;
+  background-color: #414141;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in-out;
+}
+
+.transform-column-one:hover {
+  transform: translateY(-10px);
+}
+
+/* Estilos parrafos */
+.project-paragraph {
+  font-size: 16px;
+  color: #b8b8b8;
+}
+
+.line-height {
+  line-height: 1.5; /* Altura de línea para mejorar la legibilidad */
+}
+
+.container-main-title-project {
+  margin-top: 20px;
+}
+
+/* Estilos titulo dos */
+.main-title-project-two {
+  font-size: 1.5rem; /* Tamaño de fuente para el título */
+  color: #d9d9d9;
+  font-weight: normal;
+}
+
+/* Contenedor de seciones */
+.container-section-two-frank-project {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Estilos de cada seccion */
+.section-information-container {
+  width: 50%;
+  flex: 1;
+  margin-right: 20px;
+  padding: 20px;
+  border: 1px solid #ffffff80; /* Establece un borde sólido temporal para asegurar que el elemento tenga un borde en caso de que border-image no sea compatible con el navegador */
+  border-image-slice: 1; /* Establece el ancho del borde en 1px */
+  border-image-source: linear-gradient(to right, rgba(255, 255, 255, 0.502), rgba(0, 110, 255, 0.5)); /* Degradado lineal con los colores (blanco y azul) */
+  border-image-repeat: stretch;  /* Asegúrate de que el borde se repita en todo el elemento */
+  border-radius: 5px;
+}
+
+/* Estilos para el contenedor del icono HTML */
+.container-icons-in-projects {
+  align-items: center; /* Centra los elementos verticalmente */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  text-align: center;
+}
+
+/* iconos */
+.icons-for-used-technologies {
+  font-size: 100px;
+  color: #b8b8b8;
+}
+
+/* Contenedor de textos */
+.project-text-container {
+  margin: 0;
+  
+}
+
+
+
+/* Contenedor de secion dos*/
+.container-section-three-frank-project {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}

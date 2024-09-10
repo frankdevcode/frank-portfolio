@@ -1,0 +1,135 @@
+/* Contenedor principal del header */
+/* src/Header.css */
+.main-container-of-header-number-one {
+  background: linear-gradient(90deg, #4B0082, #1e8fff82); /* Cambia el color de fondo según tus preferencias */
+  padding: 10px; /* Ajusta el espacio interno según sea necesario */
+  margin: 0;
+}
+
+.child-container-number-two {
+  max-width: 1200px;
+  min-height: 350px;
+  margin: 0 auto;
+}
+
+/* Contenedor del menú de navegación */
+.container-three-menu-navigation {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container {
+  margin-right: auto; /* Mueve el logo al extremo izquierdo */
+}
+
+/* Contenedor de las listas del menú de navegación */
+.menu-navigation-container {
+  display: flex;
+  gap: 20px; /* Espaciado entre los elementos del menú */
+  margin-left: auto; /* Mueve el menú al extremo derecho */
+}
+
+/* Listas del menú de navegación */
+.menu-navigation-container a {
+  text-decoration: none;
+  color: #f8f8f8; /* Blanco suave */
+}
+
+/* Cambio de color al pasar el cursor por las listas del menú de navegación */
+.menu-navigation-container a:hover {
+  color: #ffffff; /* Blanco más brillante al pasar el mouse si lo deseas */
+}
+
+/* Estilos para el logo */
+.Logo {
+  max-width: 90px; 
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+  
+  /* Aumenta el tamaño al pasar el cursor 
+  &:hover { 
+    transform: scale(1.1);
+  } */
+}
+
+.LogoLink {
+  text-decoration: none;
+  color: white;
+}
+
+/* Contendor de la informacion del giro banner */
+.container-header-number-three-twist-banner {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-child-info-banner {
+}
+
+/* Titulo uno giro banner */
+.title-one-twist-banner {
+  font-size: 35px;
+  color: #f8f8f8;
+  font-weight: normal;
+}
+
+/* Titulo dos giro banner */
+.paragraph-one-twist-banner {
+  font-size: 50px;
+  color: #006eff;
+  margin: 0;
+  font-weight: normal;
+}
+
+/* Contenedor para el nombre */
+.container-engineer-fp-twist-banner {
+  padding: 0;
+}
+
+/* Ingeniero FP */
+.text-engineer-fp-twist-banner {
+  font-size: 14px;
+  color: #949494;
+  text-align: center;
+}
+
+
+
+
+/* Estilos para dispositivos móviles */
+/* Ocultar el menú de dispositivos móviles por defecto */
+.header-mobile {
+  display: none;
+}
+
+.main-container-content-home-mobile {
+  display: none;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+  .main-container-of-header-number-one {
+    display: none; /* Ocultando el header del ordenador en mobile */
+  }
+
+  .main-container-content-home {
+    display: none; /* Ocultando el contenido Main del ordenador */
+  }
+
+  .header-mobile {
+    display: block; /* Mostrando el header para movil */
+  }
+
+  .main-container-content-home-mobile {
+    display: block; /* Mostrando contenenido del main para movil */
+  }
+}

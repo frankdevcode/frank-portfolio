@@ -1,0 +1,85 @@
+/* Estilos para el contenedor principal de la barra de búsqueda */
+.main-search-bar-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Estilos para el contenedor de la barra de búsqueda */
+.container-search-bar-header-fp {
+  display: flex;
+  align-items: center;
+  background-color: #222;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+/* Estilos para el input de búsqueda */
+.search-input-fp {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+  color: #fff;
+  background-color: #333;
+  width: 100%;
+}
+
+/* Estilos para el icono de búsqueda */
+.search-icon {
+  padding: 10px;
+  background-color: #444;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-icon:hover {
+  background-color: #555;
+}
+
+/* Estilos para el contenedor de resultados de búsqueda */
+.search-results-container {
+  position: absolute;
+  top: 45px;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Estilos para los resultados de búsqueda */
+.search-results-container-two {
+  background-color: #444;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  text-align: left;
+}
+
+/* Estilos para el contenedor de cada resultado */
+.container-jf-search-result {
+  border-bottom: 1px solid #555;
+  padding: 10px;
+  font-size: 0.7rem;
+}
+
+/* Estilos para el enlace de cada resultado */
+.search-result-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Estilos para el título de cada resultado */
+.search-result-title {
+  margin: 0;
+  font-weight: normal;
+}
+
+/* Hover para los resultados de búsqueda */
+.container-jf-search-result:hover {
+  background-color: #555;
+}

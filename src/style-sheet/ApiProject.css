@@ -1,0 +1,66 @@
+/* Estilos para el contenedor principal */
+.main-container-app-project {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Estilos titulo principal */
+.main-title-app {
+  font-size: 28px;
+  color: #d9d9d9;
+}
+
+/* Estilos parrafos */
+.app-paragraph {
+  font-size: 16px;
+  color: #b8b8b8;
+}
+
+.container-project-app-sections {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+/* Estilos de cada seccion */
+.sections-for-the-app-project {
+  width: 50%;
+  flex: 1;
+  margin-right: 20px;
+  padding: 0 20px 20px 20px;
+  border: 1px solid #5e5e5e;
+  border-radius: 5px;
+}
+.sections-for-the-app-project:last-child {
+  margin-right: 0;
+}
+
+.container-for-label {
+  width: fit-content;
+  background-color: #5e5e5e;
+  margin: 0;
+  padding: 5px 15px 5px 15px;
+  border-radius: 0 0 5px 5px;
+}
+
+/* Etiqueta de texto */
+.class-name-for-label {
+  color: #b8b8b8;
+  margin: 0;
+}
+
+/* Estilos para el contenedor del icono HTML */
+.container-for-project-icons {
+  align-items: center; /* Centra los elementos verticalmente */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  text-align: center;
+}
+
+/* iconos */
+.class-for-used-icons {
+  font-size: 100px;
+  color: #b8b8b8;
+}
