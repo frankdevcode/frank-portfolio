@@ -20,7 +20,7 @@ function Footer() {
 
   // Obtener numero de telefono de WhatsApp
   const codigoDePais = '+57'; // Codigo de pais
-  const numeroDeTelefono = '1234567890'; // Numero de telefono
+  const numeroDeTelefono = ''; // Numero de telefono
 
   return (
     <footer>
@@ -56,32 +56,32 @@ function Footer() {
             <p className='title-information-sections'>Redes sociales</p>
             <div className='container-social-icons'>
               <div className='container-columns-icons'>
-                <a href='#' target='_blank' rel='noopener noreferrer' className='social-media-icons-link'>
+                <a href='https://www.linkedin.com/in/franciscoperlaza/' target='_blank' rel='noopener noreferrer' className='social-media-icons-link' aria-label='LinkedIn'>
                   <AiFillLinkedin className='social-icons-components' />
                 </a>
               </div>
               <div className='container-columns-icons'>
-                <a href='#' target='_blank' rel='noopener noreferrer' className='social-media-icons-link'>
+                <a href='https://web.facebook.com/franciscopza/' target='_blank' rel='noopener noreferrer' className='social-media-icons-link' aria-label='Facebook'>
                   <AiFillFacebook className='social-icons-components' />
                 </a>
               </div>
               <div className='container-columns-icons'>
-                <a href='#' target='_blank' rel='noopener noreferrer' className='social-media-icons-link'>
+              <a href='https://github.com/frankdevcode' target='_blank' rel='noopener noreferrer' className='social-media-icons-link' aria-label='GitHub'>
                   <AiFillGithub className='social-icons-components' />
                 </a>
               </div>
               <div className='container-columns-icons'>
-                <a href='#' target='_blank' rel='noopener noreferrer' className='social-media-icons-link'>
+                <a href='https://www.instagram.com/frankdevcoder/' target='_blank' rel='noopener noreferrer' className='social-media-icons-link' aria-label='Instagram'>
                   <AiOutlineInstagram className="social-icons-components" />
                 </a>
               </div>
               <div className='container-columns-icons'>
-                <a href='#' target='_blank' rel='noopener noreferrer' className='social-media-icons-link'>
+                <a href='https://x.com/frankpzza' target='_blank' rel='noopener noreferrer' className='social-media-icons-link' aria-label='Twitter'>
                   <AiOutlineTwitter className='social-icons-components' />
                 </a>
               </div>
               <div className='container-columns-icons'>
-                <a href={`https://wa.me/${codigoDePais}${numeroDeTelefono}`} target='_blank' rel='noopener noreferrer' className='social-media-icons-link'>
+                <a href={`https://wa.me/${codigoDePais}${numeroDeTelefono}`} target='_blank' rel='noopener noreferrer' className='social-media-icons-link' aria-label='WhatsApp'>
                   <AiOutlineWhatsApp className='social-icons-components' />
                 </a>
               </div>

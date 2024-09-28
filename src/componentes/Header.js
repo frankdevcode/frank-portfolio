@@ -23,15 +23,16 @@ const Header = () => {
         <header className='container-three-menu-navigation'>
           <nav className='flex-container'>
             <div className='logo-container'>
-              <a href='/' className='LogoLink'>
+              <Link to='/' className='LogoLink'>
                 <img src={logoFranciscoPerlaza} alt='Logo Francisco Perlaza' className='Logo' />
-              </a>
+              </Link>
             </div>
             <div className='menu-navigation-container'>
-              <a href='#'>Novedades</a>
+              <Link to='/novedades'>Novedades</Link>
               <Link to='/sobre-francisco'>Sobre Francisco</Link>
-              <Link to='/portafolio'>Portafolio</Link>
-              <a href='#'>Blog</a>
+              <Link to='/proyectos'>Proyectos</Link>
+              {/* <Link to='/portafolio'>Portafolio</Link> */}
+              <Link to='/blog'>Blog</Link>
               <Link to='/contacto'>Contacto</Link>
               <Link to='/ayuda'>Ayuda</Link>
               {/* Agregar mas elementos al encabezado segun sea necesario */}

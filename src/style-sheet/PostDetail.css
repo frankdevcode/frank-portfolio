@@ -1,0 +1,170 @@
+/* Contenedor principal para la vista de detalle del post */
+.post-detail-container {
+  color: #333;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  width: 100%; /* Asegúrate de que el contenedor use el 100% del ancho disponible */
+  box-sizing: border-box; /* Asegura que el padding no cause desbordamiento */
+}
+
+/* Imagen del post en detalle */
+.post-detail-image {
+  width: 100%;
+  max-height: 500px; /* Ajusta este valor según lo que necesites */
+  height: auto; /* Asegura que la altura se ajuste a la proporción de la imagen */
+  border-radius: 8px;
+  object-fit: cover;
+  margin: 0;
+}
+
+/* Contenedor de imagen detalles del post */
+.image-container {
+  max-height: 500px; /* Ajusta este valor según lo que necesites */
+  overflow: hidden; /* Oculta cualquier parte de la imagen que exceda el contenedor */
+  margin-bottom: 30px;
+}
+
+/* Título del post */
+.post-detail-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px; /* Reducido para acercar el título al autor */
+  background: linear-gradient(to right, #666666, #FFFFFF);
+  background-clip: text;
+  -webkit-background-clip: text; /* Para navegadores basados en WebKit (Chrome, Safari) */
+  color: transparent;
+}
+
+/* Información del autor, fecha y tiempo de lectura */
+.post-detail-author-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; /* Mueve el contenido hacia abajo después del autor */
+}
+
+.post-author-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.post-author-details {
+  font-size: 14px;
+  color: #333;
+}
+
+.post-author-name {
+  font-weight: normal;
+  font-size: 0.8rem;
+  margin-bottom: 0; /* Eliminar el margen inferior del nombre */
+}
+
+.post-author-link {
+  text-decoration: none;
+  color: #007BFF; /* Azul para el nombre del autor */
+}
+
+.post-author-link:hover {
+  text-decoration: underline;
+}
+
+.post-detail-date {
+  font-size: 0.9rem; /* Tamaño más pequeño */
+  color: #7f8c8d;
+  margin-top: 2px; /* Reducir espacio entre nombre y fecha */
+}
+
+/* Contenido del post */
+.post-detail-content {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #afafaf;
+  margin-bottom: 20px;
+  padding: 0 0px; /* Añadir padding para evitar desbordamiento */
+}
+
+/* Subtitulos del post */
+.post-detail-content h3 {
+  font-size: 1.6rem;
+}
+
+/* Enlace para regresar a la página anterior */
+.post-detail-back-link {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 1rem;
+  color: #3498db;
+  text-decoration: none;
+  border: 1px solid #3498db;
+  border-radius: 5px;
+  margin-top: 25px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.post-detail-back-link:hover {
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Invitación a compartir ideas en Twitter (X) */
+.post-detail-twitter-invite {
+  font-size: 1rem;
+  color: #707070;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.post-detail-twitter-invite a {
+  color: #1DA1F2; /* Azul de Twitter (X) */
+  text-decoration: none;
+}
+
+.post-detail-twitter-invite a:hover {
+  text-decoration: underline;
+}
+
+.post-subtitle h3{
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/*--------------------------------------------------------------------------*/
+
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+  .post-detail-container {
+    padding: 15px; /* Menos padding en móviles */
+  }
+
+  .post-detail-container h1 {
+    font-size: 2rem; /* Tamaño de fuente más pequeño en móviles */
+  }
+
+  .post-detail-content {
+    font-size: 1rem; /* Tamaño de fuente más pequeño en móviles */
+    padding: 0 5px; /* Menos padding en móviles */
+  }
+
+  .post-detail-back-link {
+    font-size: 0.9rem; /* Tamaño más pequeño para el enlace de regreso */
+    padding: 8px 12px; /* Menos padding */
+  }
+
+  .post-author-avatar {
+    width: 40px; /* Tamaño de avatar más pequeño */
+    height: 40px;
+  }
+
+  .post-author-name {
+    font-size: 0.9rem; /* Tamaño de fuente más pequeño */
+  }
+
+  .post-detail-date {
+    font-size: 0.8rem; /* Tamaño más pequeño */
+  }
+}

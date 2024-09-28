@@ -65,6 +65,36 @@
   color: #afafaf;
 }
 
+/* Contenedor Boton Ver mas */
+.ecommerce-project-button {
+  padding: 25px 0 25px;
+}
+
+/* Estilos boton ver mas */
+.button-ecommerce-ecm {
+  background-color: transparent; /* Fondo transparente */
+  border: 2px solid #007BFF; /* Borde de color azul */
+  color: #007BFF; /* Color del texto */
+  font-size: 18px; /* Tamaño de fuente */
+  padding: 10px 20px; /* Espaciado interno */
+  cursor: pointer; /* Mostrar el puntero en hover */
+  border-radius: 5px; /* Bordes redondeados */
+  text-align: center; /* Centrar el texto dentro del botón */
+  transition: all 0.3s ease; /* Suavizar las transiciones */
+  display: inline-block; /* Alinear el botón correctamente */
+  margin: 0 auto; /* Centrarse horizontalmente */
+  position: absolute; /* Para centrar en la página */
+  left: 50%; /* Posición horizontal */
+  transform: translateX(-50%); /* Centrar el botón */
+}
+
+.button-ecommerce-ecm:hover {
+  background-color: #007BFF; /* Fondo azul en hover */
+  color: white; /* Color del texto en hover */
+  border-color: #0056b3; /* Cambia el borde en hover */
+}
+
+
 /* Contenedor hijo de las columnas */
 .child-container-project-content {
   position: relative;
@@ -135,6 +165,7 @@
   border-radius: 10px;
   padding: 0 20px 0 20px;
   background-color: #151515;
+  padding-top: 40px;
 }
 .container-to-handle-the-contents:last-child {
   margin-right: 0;
@@ -161,7 +192,38 @@
 /* Seccion para  cambio de imagenes en el home */
 .contenedor-principal {
   display: flex;
+  position: relative;
+  padding-left: 20px;
 }
+
+.contenedor-principal::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, #6a11cb, #071733); /* Degradado para dos colores */
+  z-index: 1;
+}
+
+.contenedor-principal::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 4px; /* Separación para simular doble borde */
+  width: 2px;
+  height: 0;
+  background: linear-gradient(to bottom, #ff7e5f, #1e150e); /* Degradado de la segunda línea */
+  transition: height 0.4s ease; /* Animación del borde */
+  z-index: 0;
+}
+
+.contenedor-principal:hover::after {
+  height: 100%; /* Crece hasta cubrir todo el contenedor */
+}
+
+
 
 .columna-izquierda {
   width: 50%; /* Ajusta el ancho según tus necesidades */

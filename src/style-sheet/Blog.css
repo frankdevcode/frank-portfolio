@@ -1,0 +1,130 @@
+/* Contenedor principal del blog, define el espacio interno y los márgenes automáticos para centrar el contenido */
+.blog-container {
+  padding: 20px;
+  max-width: 1200px; /* Ancho máximo para que no sea demasiado ancho en pantallas grandes */
+  margin: 0 auto;
+  color: #333; /* Color de texto base oscuro */
+}
+
+/* Migas de pan (breadcrumbs) para la navegación */
+.breadcrumb {
+  margin-bottom: 20px; /* Espaciado inferior */
+}
+
+/* Estilo de los enlaces dentro de las migas de pan */
+.breadcrumb a {
+  color: #0073e6; /* Color azul llamativo para los enlaces */
+  text-decoration: none; /* Sin subrayado */
+}
+
+/* Efecto de hover para los enlaces de las migas de pan */
+.breadcrumb a:hover {
+  text-decoration: underline; /* Subrayado cuando se pasa el cursor por encima */
+}
+
+/* Grid (rejilla) del blog para distribuir las tarjetas de manera responsive */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Se ajusta automáticamente según el tamaño de la pantalla */
+  gap: 20px; /* Espacio entre las tarjetas */
+}
+
+/* Enlace completo que envuelve cada tarjeta para hacerla clicable */
+.blog-card-link {
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  color: inherit; /* Hereda el color del texto */
+}
+
+/* Estilos para cada tarjeta del blog */
+.blog-card {
+  background-color: #f9f9f9; /* Fondo claro para la tarjeta */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidad */
+  padding: 20px; /* Espaciado interno */
+  transition: transform 0.3s ease; /* Transición suave al hacer hover */
+  cursor: pointer; /* Muestra un cursor de mano para indicar interactividad */
+}
+
+/* Efecto de hover para la tarjeta (levanta la tarjeta ligeramente) */
+.blog-card:hover {
+  transform: translateY(-10px); /* La tarjeta se eleva 10px */
+}
+
+/* Estilo de la imagen dentro de la tarjeta del blog */
+.blog-image {
+  width: 100%; /* La imagen ocupa todo el ancho disponible */
+  border-radius: 10px; /* Bordes redondeados para la imagen */
+  margin-bottom: 15px; /* Espacio inferior para separar la imagen del texto */
+}
+
+/* Título de la tarjeta del blog */
+.blog-card h2 {
+  font-size: 1.5rem; /* Tamaño del título */
+  margin-bottom: 10px; /* Espacio inferior */
+}
+
+/* Resumen o descripción de la tarjeta del blog */
+.blog-card p {
+  margin-bottom: 0px; /* Espacio inferior */
+  line-height: 1.6; /* Altura de línea cómoda para facilitar la lectura */
+}
+
+/* Contenedor para la información del autor */
+.blog-author-info {
+  display: flex; /* Flexbox para alinear el avatar y el nombre en línea */
+  align-items: center; /* Alinea verticalmente en el centro */
+  margin-top: 15px; /* Espacio superior */
+}
+
+/* Imagen del avatar del autor */
+.author-avatar {
+  width: 40px; /* Tamaño fijo del avatar */
+  height: 40px;
+  border-radius: 50%; /* Hace la imagen completamente redonda */
+  margin-right: 10px; /* Espacio entre la imagen y el nombre */
+}
+
+/* Contenedor de los detalles del autor (nombre y fecha) */
+.author-details {
+  display: flex;
+  flex-direction: column; /* Muestra el nombre y la fecha uno debajo del otro */
+  margin: 0;
+}
+
+/* Estilo del nombre del autor, que es un enlace */
+.author-name {
+  font-size: 0.8rem;
+  font-weight: normal; /* Resalta el nombre con negritas */
+  color: #0073e6; /* Color azul llamativo */
+  text-decoration: none; /* Sin subrayado */
+}
+
+/* Efecto de hover para el nombre del autor */
+.author-name:hover {
+  text-decoration: underline; /* Subrayado cuando se pasa el cursor */
+}
+
+/* Estilo para la fecha de publicación y el tiempo de lectura */
+.blog-date {
+  font-size: 0.9rem; /* Tamaño de fuente más pequeño */
+  color: #777; /* Color gris claro para desactivar visualmente */
+  margin: 0;
+}
+
+/* Pie de página del blog */
+.blog-footer {
+  text-align: center; /* Centra el contenido del pie de página */
+  margin-top: 30px; /* Espacio superior */
+}
+
+/* Estilo para el enlace del pie de página (enlace a Twitter) */
+.blog-footer a {
+  color: #0073e6; /* Azul llamativo */
+  text-decoration: none; /* Sin subrayado */
+  font-weight: bold; /* Resaltado en negrita */
+}
+
+/* Efecto de hover para el enlace del pie de página */
+.blog-footer a:hover {
+  text-decoration: underline; /* Subrayado al pasar el cursor */
+}

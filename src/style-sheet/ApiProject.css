@@ -1,66 +1,114 @@
-/* Estilos para el contenedor principal */
-.main-container-app-project {
+/* Estilos generales del componente */
+.api-project-container {
+  padding: 2rem;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
-  border-radius: 8px;
+  font-family: 'Arial', sans-serif;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilos titulo principal */
-.main-title-app {
-  font-size: 28px;
-  color: #d9d9d9;
-}
-
-/* Estilos parrafos */
-.app-paragraph {
-  font-size: 16px;
-  color: #b8b8b8;
-}
-
-.container-project-app-sections {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-top: 20px;
-}
-
-/* Estilos de cada seccion */
-.sections-for-the-app-project {
-  width: 50%;
-  flex: 1;
-  margin-right: 20px;
-  padding: 0 20px 20px 20px;
-  border: 1px solid #5e5e5e;
-  border-radius: 5px;
-}
-.sections-for-the-app-project:last-child {
-  margin-right: 0;
-}
-
-.container-for-label {
-  width: fit-content;
-  background-color: #5e5e5e;
-  margin: 0;
-  padding: 5px 15px 5px 15px;
-  border-radius: 0 0 5px 5px;
-}
-
-/* Etiqueta de texto */
-.class-name-for-label {
-  color: #b8b8b8;
-  margin: 0;
-}
-
-/* Estilos para el contenedor del icono HTML */
-.container-for-project-icons {
-  align-items: center; /* Centra los elementos verticalmente */
-  justify-content: center; /* Centra los elementos horizontalmente */
+/* Encabezado del proyecto */
+.project-header {
   text-align: center;
+  margin-bottom: 2rem;
 }
 
-/* iconos */
-.class-for-used-icons {
-  font-size: 100px;
-  color: #b8b8b8;
+.project-title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.project-description {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Sección de tecnologías */
+.tech-section {
+  margin: 2rem 0;
+}
+
+.tech-title {
+  font-size: 2rem;
+  color: #f1f1f1;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.tech-card-api-frank {
+  background: linear-gradient(180deg, #3e250086, #181818); /* Degradado */
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tech-card-api-frank:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.tech-icon {
+  font-size: 3rem;
+  color: #007acc;
+  margin-bottom: 1rem;
+}
+
+.tech-card-api-frank h3 {
+  font-size: 1.5rem;
+  color: #f1f1f1;
+  margin-bottom: 1rem;
+}
+
+.tech-card-api-frank p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Botón de llamada a la acción */
+.cta-button {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background-color: #007acc;
+  color: #fff;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #005b99;
+}
+
+/* Media queries para diseño responsivo */
+@media (max-width: 768px) {
+  .project-title {
+    font-size: 2rem;
+  }
+
+  .project-description {
+    font-size: 1rem;
+  }
+
+  .tech-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-button {
+    font-size: 1rem;
+    padding: 0.6rem 1.5rem;
+  }
 }

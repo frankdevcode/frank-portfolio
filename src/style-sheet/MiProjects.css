@@ -1,0 +1,235 @@
+/* IMPORTANTE: Corregir CSS para que no afecte la visualizacion de la pagina de inicio */
+
+/* Contenedor principal del portafolio */
+.main-container-portfolio-frank {
+  padding: 0;
+  margin: 0;
+}
+
+
+/* Contenedor portafolio */
+.portfolio-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Título del portafolio */
+.portfolio-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+  font-weight: 700;
+}
+
+/* Grid para organizar las tarjetas de proyectos */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+/* Tarjeta de proyecto individual */
+.project-card {
+  background: linear-gradient(180deg, #3e250086, #181818); /* Degradado */
+  border-radius: 8px;
+  border: 2px solid #3e3e3e;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Imagen del proyecto */
+.project-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-bottom: 1px solid #e0e0e0;
+  object-fit: cover; /* Mantiene las proporciones de la imagen */
+}
+
+/* Título del proyecto */
+.project-title {
+  font-size: 1.5rem;
+  margin: 1rem;
+  color: #d7d7d7;
+  font-weight: 600;
+}
+
+/* Descripción del proyecto */
+.project-description {
+  font-size: 1rem;
+  margin: 0 1rem 1rem;
+  color: #909090;
+  line-height: 1.6;
+}
+
+/* Contenedor de tecnologías usadas en el proyecto */
+.project-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0 1rem 1rem;
+}
+
+/* Estilo para las etiquetas de tecnologías */
+.technology-tag {
+  background-color: #383838;
+  color: #d7d7d7;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+
+/* Ícono de enlace externo */
+.external-link-icon {
+  margin-left: 0.5rem;
+  width: 1rem;
+  height: 1rem;
+}
+
+
+/* Enlace a más detalles del proyecto */
+.project-link-mi-frank {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 1rem 1rem;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(90deg, #6A82FB, #45EBA5); /* Degradado */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+}
+
+.project-link-mi-frank:hover {
+  background-color: #0051a2; /* O puedes mantener el degradado si prefieres */
+}
+
+/* Estilo para la flecha, oculta inicialmente */
+.arrow-icon {
+  opacity: 0;
+  transform: translateX(-100%); /* Colocar la flecha fuera de la vista a la izquierda */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Efecto al pasar el cursor por encima del botón */
+.project-link-mi-frank:hover .arrow-icon {
+  opacity: 1; /* Mostrar la flecha */
+  transform: translateX(10px); /* Desplazarla hacia la derecha dentro del botón */
+}
+
+.external-link-icon {
+  margin-left: 0.5rem;
+  width: 1rem;
+  height: 1rem;
+}
+
+/* Seccion dos */
+.section-two-portfolio-frank {
+  background: linear-gradient(90deg, #3e250086, #0d0d0deb); /* Degradado */
+  padding: 20px 5px 20px 150px;
+
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #1e1e1e; /* Fondo oscuro */
+}
+
+
+.frank-title {
+  font-size: 2.5rem;
+  background: linear-gradient(90deg, #ff4516, #ffeddf); /* Degradado de colores */
+  background-clip: text; /* Ajuste del fondo al texto */
+  -webkit-background-clip: text; /* Para compatibilidad con navegadores WebKit */
+  color: transparent; /* Asegura que el texto sea transparente para que el degradado sea visible */
+  margin-bottom: 1rem;
+}
+
+.frank-description {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+
+.frank-community-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #b96c0059; /* Degradado en el botón */
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.frank-community-button:hover {
+  transform: scale(1.05); /* Efecto al pasar el mouse */
+}
+
+
+
+
+
+
+/* Responsividad para tablets */
+@media (max-width: 768px) {
+  .portfolio-title {
+    font-size: 2rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-title {
+    font-size: 1.25rem;
+  }
+
+  .project-description {
+    font-size: 0.875rem;
+  }
+}
+
+/* Responsividad para móviles */
+@media (max-width: 480px) {
+  .portfolio-container {
+    padding: 1rem;
+  }
+
+  .portfolio-title {
+    font-size: 1.75rem;
+  }
+
+  .project-card {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .project-title {
+    font-size: 1.125rem;
+  }
+
+  .project-description {
+    font-size: 0.8125rem;
+  }
+
+  .technology-tag {
+    font-size: 0.75rem;
+  }
+
+  .project-link {
+    font-size: 0.875rem;
+  }
+}
+

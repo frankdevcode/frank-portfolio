@@ -1,79 +1,88 @@
-/* Estilos generales */
+/* src/style-sheet/HelpCenter.css */
+
 .help-center-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
-/* Estilos para el titulo */
-.tittle-help-centro {
-  font-size: 28px;
-  margin-bottom: 20px;
+.title-help-center {
   color: #d9d9d9;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-/* Estilos para subtítulos */
 .subtitles-sections-help {
-  font-size: 18px; /* Tamaño de fuente para el título */
   color: #d9d9d9;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
 }
 
-/* Estilos para los párrafos */
 .help-paragraph {
-  font-size: 16px; /* Tamaño de fuente para el contenido del párrafo */
-  line-height: 1.6; /* Altura de línea para mejorar la legibilidad */
-  margin-bottom: 15px; /* Espacio inferior entre párrafos */
-  color: #b8b8b8;
-}
-
-/* Enlaces */
-.link-help-section {
-  color: #007BFF;
-  text-decoration: none;
-}
-
-/* Secciones específicas */
-.contact-section,
-.faq-section,
-.community-section,
-.technical-support-section {
-  border-bottom: 1px solid hsla(0, 0%, 87%, 0.288);
+  color: #afafaf;
+  font-size: 1rem;
   margin-bottom: 20px;
-  padding-bottom: 20px;
 }
 
-/* A qui va el formulario de contacto */
-/* Estilos de formulario de contacto (puedes personalizar según tus necesidades) */
-.contact-form {
+.link-help-section {
+  color: #006eff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.link-help-section:hover {
+  color: #004dbf;
+}
+
+.social-icons {
   display: flex;
-  flex-direction: column;
-  max-width: 400px;
-  margin: 0 auto;
+  gap: 15px;
+  margin-top: 10px;
 }
 
-.contact-form label {
-  margin-bottom: 8px;
-  font-weight: bold;
-}
-
-.contact-form input,
-.contact-form textarea {
-  padding: 10px;
-  margin-bottom: 16px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.contact-form button {
-  background-color: #007BFF;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
+.icon {
+  color: rgba(255, 255, 255, 0.31);
+  font-size: 1.5rem;
   cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.contact-form button:hover {
-  background-color: #0056b3;
+.icon:hover {
+  transform: scale(1.1);
+  color: rgba(255, 255, 255, 0.447);
+}
+
+.support-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #006eff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.support-button:hover {
+  background-color: #004dbf;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .title-help-center {
+    font-size: 2rem;
+  }
+
+  .subtitles-sections-help {
+    font-size: 1.5rem;
+  }
+
+  .help-paragraph {
+    font-size: 1rem;
+  }
+
+  .icon {
+    font-size: 1.5rem;
+  }
 }

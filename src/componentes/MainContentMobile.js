@@ -24,10 +24,10 @@ import imagenLogoEdteam from '../imagenes/imagen-logo-edteam.jpg';
 import imagenLogoPlatzi from '../imagenes/imagen-logo-platzi.jpg';
 import imagenLogoSena from '../imagenes/imagen-logo-sena.jpg';
 
-// Define un array con la información que se mostrará en la columna izquierda
+// Define un array con la información que se mostrará en la sección de educación
 const informaciones = [
   "Ingeniero de Sistemas",
-  "Python esscentials",
+  "Python Essentials",
   "Introducción a la programación orientada a objetos",
   "Inteligencia artificial para el trabajo",
   "Bases de datos generalidades y sistemas de gestión",
@@ -37,10 +37,33 @@ const informaciones = [
 ];
 
 // Define un array con las URLs de las imágenes
-const imagenes = [imagenLogoUniremington, imagenLogoCisco, imagenLogoEdteam, imagenLogoPlatzi, imagenLogoSena, imagenLogoUniremington, imagenLogoSena, imagenLogoPlatzi];
+const imagenes = [
+  imagenLogoUniremington, 
+  imagenLogoCisco, 
+  imagenLogoEdteam, 
+  imagenLogoPlatzi, 
+  imagenLogoSena, 
+  imagenLogoUniremington, 
+  imagenLogoSena, 
+  imagenLogoPlatzi
+];
 
 // Componente principal
-const MainContent = () => {
+const MainContentMobile = () => {
+  // Estado para controlar qué imagen se mostrará en el banner
+  const [imagenSeleccionada, setImagenSeleccionada] = useState(null);
+  const [mostrarBanner, setMostrarBanner] = useState(false);
+
+  // Función para manejar el clic en un texto
+  const handleTextoClick = (index) => {
+    setImagenSeleccionada(imagenes[index]);
+    setMostrarBanner(true); // Muestra el banner con la imagen seleccionada
+  };
+
+  // Función para cerrar el banner
+  const cerrarBanner = () => {
+    setMostrarBanner(false); // Oculta el banner
+  };
 
   // Definimos las tecnologías iniciales
   const initialTechnologies = [
@@ -172,7 +195,7 @@ const MainContent = () => {
             ))}
 
             {/* Nueva sección oculta con la tecnología de JavaScript */}
-            <div className='container-to-handle-the-contents'>
+            <div className=''>
               <div className='icon-sessions-container-home'>
                 <SiGit className='home-session-icons' />
               </div>
@@ -181,7 +204,7 @@ const MainContent = () => {
               {/* Agrega mas contenido segun sea necesario */}
             </div>
 
-            <div className='container-to-handle-the-contents'>
+            <div className=''>
               <div className='icon-sessions-container-home'>
                 <SiGithub className='home-session-icons' />
               </div>
@@ -190,7 +213,7 @@ const MainContent = () => {
               {/* Agrega mas contenido segun sea necesario */}
             </div>
 
-            <div className='container-to-handle-the-contents'>
+            <div className=''>
               <div className='icon-sessions-container-home'>
                 <SiMysql className='home-session-icons' />
               </div>
@@ -204,28 +227,38 @@ const MainContent = () => {
 
       {/* Secion 3 */}
       <div className='mobile-container-title-section-three-home'>
-        <h2 className='mobile-title-education-and-certifications   mobile-title-skills-list'>Educación y certificaciones</h2>
+        <h2 className='mobile-title-education-and-certifications mobile-title-skills-list'>
+          Educación y certificaciones
+        </h2>
       </div>
+
       <div className="mobile-container-main-section-three-education">
         <div className="columna-izquierda">
           {informaciones.map((info, index) => (
             <div
               key={index}
-              className={`informacion ${seleccionado === index ? 'resaltado' : ''}`} // Aplica la clase 'resaltado' si el contenedor está seleccionado
-              onMouseEnter={() => mostrarVistaPrevia(imagenes[index], index)}
+              className='informacion'
+              onClick={() => handleTextoClick(index)} // Muestra el banner al hacer clic
             >
               {info}
             </div>
           ))}
         </div>
-        <div className="columna-derecha">
-          {imagenVistaPrevia && (
-            <img src={imagenVistaPrevia} alt="Vista previa" className="imagen-previa" />
-          )}
-        </div>
       </div>
+
+      {/* Banner que aparece desde la parte inferior */}
+      {mostrarBanner && (
+        <div className="overlay" onClick={cerrarBanner}>
+          <div className="banner" onClick={(e) => e.stopPropagation()}>
+            <img src={imagenSeleccionada} alt="Vista seleccionada" className="imagen-banner" />
+            <button className="cerrar-banner" onClick={cerrarBanner}>
+              Cerrar
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
   
-export default MainContent; // Exportando el componente
+export default MainContentMobile; // Exportando el componente

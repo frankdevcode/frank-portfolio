@@ -1,0 +1,56 @@
+/* SearchResultsDisplay.css */
+
+/* Resultados de busquedas al presionar ENTER o clic en el icon de BUSCAR en la barra de busqueda */
+/* Contenedor */
+.search-results-container-enter-or-search-icon {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Titulo resultado de busqueda para: */
+.title-search-result-for-enter {
+  font-size: 24px;
+  color: #d9d9d9;
+  margin-bottom: 15px;
+}
+
+/* Lista de resultados de busqueda */
+.search-results-list-enter {
+  list-style: none;
+  padding: 0;
+}
+
+.enter-search-result-element {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-bottom: 1px solid rgba(221, 221, 221, 0.242);
+}
+
+.search-result-link-enter {
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+.search-result-link-enter:hover {
+  text-decoration: underline; /* Agregar subrayado al pasar el cursor */
+}
+
+.enter-search-result-element h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.enter-search-result-element p {
+  margin-top: 5px;
+  font-size: 16px;
+  color: #afafaf;
+}
+
+.no-results-found-enter {
+  font-size: 18px;
+  color: #888;
+  margin-top: 10px;
+  text-align: center;
+}

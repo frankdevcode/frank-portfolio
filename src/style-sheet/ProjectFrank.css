@@ -1,0 +1,141 @@
+/* Contenedor principal */
+.project-frank-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1200px;  /* Máximo ancho en pantallas grandes */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Banner */
+.project-banner {
+  width: 100%;
+  padding: 0; /* Eliminamos rellenos para evitar desplazamiento */
+}
+
+.project-frank-image-banner {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenido del proyecto */
+.project-content {
+  text-align: center;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.project-title {
+  font-size: 2.5rem;
+  color: #f1f1f1;
+  margin-bottom: 20px;
+}
+
+.project-description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #777;
+  max-width: 900px;
+  margin: 0 auto 40px;
+}
+
+/* Tecnologías */
+.technologies {
+  margin-top: 40px;
+}
+
+.technologies h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #f1f1f1;
+}
+
+.technology-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.technology-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(180deg, #3e250086, #181818); /* Degradado */
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* Animación de desplazamiento hacia arriba al pasar el cursor */
+.technology-item:hover {
+  transform: translateY(-10px); /* Desplazamiento hacia arriba */
+  box-shadow: 0 8px 12px rgba(118, 118, 118, 0.2); /* Sombra más pronunciada */
+}
+
+.technology-icon {
+  font-size: 3rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.technology-item p {
+  font-size: 1rem;
+  color: #777;
+  text-align: center;
+}
+
+/* Adaptación para pantallas pequeñas */
+@media (max-width: 1024px) {
+  .technology-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas medianas */
+  }
+
+  .project-title {
+    font-size: 2rem;
+  }
+
+  .project-description {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .technology-grid {
+    grid-template-columns: 1fr; /* 1 columna en pantallas pequeñas */
+  }
+
+  .technology-item p {
+    font-size: 0.9rem;
+  }
+
+  .project-title {
+    font-size: 1.8rem;
+  }
+
+  .project-description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-title {
+    font-size: 1.5rem;
+  }
+
+  .project-description {
+    font-size: 0.9rem;
+  }
+
+  .technology-icon {
+    font-size: 2.5rem;
+  }
+}

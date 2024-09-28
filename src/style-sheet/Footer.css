@@ -56,16 +56,16 @@
   font-size: 15px;
 }
 
- /* Cambio de color al pasar el cursor sobre enlaces */
- li:hover > a:hover {
-  color: #707070; /* Color diferente al pasar el cursor */
+/* Cambia el color al pasar el cursor sobre los enlaces */
+.navigation-columns-container a {
+  color: #777; /* Color normal */
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s; /* Transición suave */
 }
 
-/* Estilo para quitar el subrayado de los enlaces */
-.information-columns a {
-  text-decoration: none;
-  color: #777;    /* Color del texto de la descripcion */
-  cursor: pointer;
+.navigation-columns-container a:hover {
+  color: #ffffff; /* Cambia a este color al pasar el cursor */
 }
 
 .title-information-sections {
@@ -105,4 +105,50 @@
 .footer-text {
   font-size: 14px;
   color: #777;
+}
+
+
+
+
+/* Media Queries para dispositivos móviles (pantallas más pequeñas) */
+@media (max-width: 768px) {
+  /* Flexibilidad para pantallas de tablets o móviles */
+  .navigation-columns-container {
+    flex-direction: column; /* Cambia la dirección a columnas */
+    align-items: center;
+  }
+
+  .information-columns {
+    max-width: 100%; /* Ocupar todo el ancho */
+    margin-bottom: 20px; /* Espacio entre las columnas */
+  }
+
+  .collapsible-menu a {
+    font-size: 14px; /* Texto más pequeño en móviles */
+  }
+  
+  .container-social-icons {
+    justify-content: center;
+    gap: 15px; /* Espacio menor entre iconos en móviles */
+  }
+
+  .social-media-icons-link {
+    font-size: 24px; /* Redimensiona los iconos en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Ajustes adicionales para móviles pequeños */
+  footer {
+    padding: 0px 0px; /* Menos padding en móviles */
+  }
+
+  .text-in-logo-description {
+    font-size: 13px; /* Reduce el tamaño del texto en móviles */
+    max-width: 100%; /* Ocupar más espacio horizontal */
+  }
+
+  .footer-text {
+    font-size: 12px; /* Texto más pequeño en móviles */
+  }
 }

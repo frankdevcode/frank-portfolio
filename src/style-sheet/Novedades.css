@@ -1,0 +1,88 @@
+/* Novedades.css */
+.novedades {
+  padding: 2rem 0rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.novedades-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 3rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.novedades-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.novedad-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.novedad-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.novedad-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 3px solid #333;
+}
+
+.novedad-title {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 1rem 0 0.5rem;
+}
+
+.novedad-description {
+  font-size: 1rem;
+  color: #666;
+  padding: 0 1rem 1rem;
+}
+
+.novedad-link {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007BFF;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.novedad-link:hover {
+  background-color: #0056b3;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .novedades-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .novedad-card {
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .novedad-card {
+    max-width: 45%;
+  }
+}
