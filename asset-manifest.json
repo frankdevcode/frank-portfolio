@@ -1,19 +1,27 @@
 {
   "files": {
-    "main.css": "/frank-portfolio/static/css/main.bf540ce6.css",
-    "main.js": "/frank-portfolio/static/js/main.a3e47366.js",
-    "static/media/logo-francisco-perlaza.png": "/frank-portfolio/static/media/logo-francisco-perlaza.9c7bb3e5cb10f926920f.png",
-    "static/media/imagen-logo-sena.jpg": "/frank-portfolio/static/media/imagen-logo-sena.7d7467e8622a11c57883.jpg",
-    "static/media/imagen-logo-remigton.jpg": "/frank-portfolio/static/media/imagen-logo-remigton.1c422e27cea77bbab891.jpg",
-    "static/media/imagen-logo-cisco.jpg": "/frank-portfolio/static/media/imagen-logo-cisco.bea0f640c88740ff4b9d.jpg",
-    "static/media/imagen-logo-platzi.jpg": "/frank-portfolio/static/media/imagen-logo-platzi.7ed353972d35614471fa.jpg",
-    "static/media/imagen-logo-edteam.jpg": "/frank-portfolio/static/media/imagen-logo-edteam.4e97181325e2788da900.jpg",
-    "index.html": "/frank-portfolio/index.html",
-    "main.bf540ce6.css.map": "/frank-portfolio/static/css/main.bf540ce6.css.map",
-    "main.a3e47366.js.map": "/frank-portfolio/static/js/main.a3e47366.js.map"
+    "main.css": "/static/css/main.fc29400b.css",
+    "main.js": "/static/js/main.332ee1ec.js",
+    "static/media/sitio-web-frank.jpg": "/static/media/sitio-web-frank.fa584e3646e9ad0d726b.jpg",
+    "static/media/rush-go-portada-blog.jpg": "/static/media/rush-go-portada-blog.f3887c7d24662be3f0cb.jpg",
+    "static/media/python-portada-blog.jpg": "/static/media/python-portada-blog.5296bb02ad32b531ad48.jpg",
+    "static/media/javascript-portada-blog.jpg": "/static/media/javascript-portada-blog.34144cb1e9eaf47cfeba.jpg",
+    "static/media/logo-francisco-perlaza.png": "/static/media/logo-francisco-perlaza.9c7bb3e5cb10f926920f.png",
+    "static/media/frank-dev.jpg": "/static/media/frank-dev.c8674255c572974d2101.jpg",
+    "static/media/tarjeta-imagen-proyecto-plataforma-empresarial.jpg": "/static/media/tarjeta-imagen-proyecto-plataforma-empresarial.933db6ef15daf2b8054e.jpg",
+    "static/media/tarjeta-imagen-proyecto-api-ecommerce.jpg": "/static/media/tarjeta-imagen-proyecto-api-ecommerce.7e92e22c0b49e91c0e8b.jpg",
+    "static/media/imagen-logo-remigton.jpg": "/static/media/imagen-logo-remigton.270fd9a85a2eae5ec34a.jpg",
+    "static/media/tarjeta-imagen-proyecto-frank.jpg": "/static/media/tarjeta-imagen-proyecto-frank.65e26f9dbb41b1190a13.jpg",
+    "static/media/imagen-logo-cisco.jpg": "/static/media/imagen-logo-cisco.4aade5e6c885b66631ed.jpg",
+    "static/media/imagen-logo-sena.jpg": "/static/media/imagen-logo-sena.2b8bae551663c35616dc.jpg",
+    "static/media/imagen-logo-platzi.jpg": "/static/media/imagen-logo-platzi.26ab9702b75495f1ddae.jpg",
+    "static/media/imagen-logo-edteam.jpg": "/static/media/imagen-logo-edteam.2905d46f788f6752f34b.jpg",
+    "index.html": "/index.html",
+    "main.fc29400b.css.map": "/static/css/main.fc29400b.css.map",
+    "main.332ee1ec.js.map": "/static/js/main.332ee1ec.js.map"
   },
   "entrypoints": [
-    "static/css/main.bf540ce6.css",
-    "static/js/main.a3e47366.js"
+    "static/css/main.fc29400b.css",
+    "static/js/main.332ee1ec.js"
   ]
 }
