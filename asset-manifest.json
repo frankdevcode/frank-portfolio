@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.1c5cb10b.css",
-    "main.js": "/static/js/main.332ee1ec.js",
+    "main.js": "/static/js/main.0e24f8da.js",
     "static/media/sitio-web-frank.jpg": "/static/media/sitio-web-frank.fa584e3646e9ad0d726b.jpg",
     "static/media/rush-go-portada-blog.jpg": "/static/media/rush-go-portada-blog.f3887c7d24662be3f0cb.jpg",
     "static/media/python-portada-blog.jpg": "/static/media/python-portada-blog.5296bb02ad32b531ad48.jpg",
@@ -18,10 +18,10 @@
     "static/media/imagen-logo-edteam.jpg": "/static/media/imagen-logo-edteam.2905d46f788f6752f34b.jpg",
     "index.html": "/index.html",
     "main.1c5cb10b.css.map": "/static/css/main.1c5cb10b.css.map",
-    "main.332ee1ec.js.map": "/static/js/main.332ee1ec.js.map"
+    "main.0e24f8da.js.map": "/static/js/main.0e24f8da.js.map"
   },
   "entrypoints": [
     "static/css/main.1c5cb10b.css",
-    "static/js/main.332ee1ec.js"
+    "static/js/main.0e24f8da.js"
   ]
 }
