@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.7419c84a.css",
+    "main.css": "/static/css/main.a3dec74b.css",
     "main.js": "/static/js/main.b52e1c7b.js",
     "static/media/sitio-web-frank.jpg": "/static/media/sitio-web-frank.fa584e3646e9ad0d726b.jpg",
     "static/media/rush-go-portada-blog.jpg": "/static/media/rush-go-portada-blog.f3887c7d24662be3f0cb.jpg",
@@ -18,11 +18,11 @@
     "static/media/imagen-logo-platzi.jpg": "/static/media/imagen-logo-platzi.26ab9702b75495f1ddae.jpg",
     "static/media/imagen-logo-edteam.jpg": "/static/media/imagen-logo-edteam.2905d46f788f6752f34b.jpg",
     "index.html": "/index.html",
-    "main.7419c84a.css.map": "/static/css/main.7419c84a.css.map",
+    "main.a3dec74b.css.map": "/static/css/main.a3dec74b.css.map",
     "main.b52e1c7b.js.map": "/static/js/main.b52e1c7b.js.map"
   },
   "entrypoints": [
-    "static/css/main.7419c84a.css",
+    "static/css/main.a3dec74b.css",
     "static/js/main.b52e1c7b.js"
   ]
 }
