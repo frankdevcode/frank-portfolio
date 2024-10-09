@@ -159,3 +159,27 @@
   font-size: 16px;
 }
 
+/* Responsividad */
+@media (max-width: 768px) {
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas en tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-grid {
+    grid-template-columns: 1fr; /* 1 columna en móviles */
+  }
+
+  .blog-card {
+    padding: 10px;
+  }
+
+  .blog-card h2 {
+    font-size: 18px;
+  }
+
+  .blog-card p {
+    font-size: 14px;
+  }
+}
