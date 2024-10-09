@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.a3dec74b.css",
-    "main.js": "/static/js/main.b52e1c7b.js",
+    "main.js": "/static/js/main.097e6e2f.js",
     "static/media/sitio-web-frank.jpg": "/static/media/sitio-web-frank.fa584e3646e9ad0d726b.jpg",
     "static/media/rush-go-portada-blog.jpg": "/static/media/rush-go-portada-blog.f3887c7d24662be3f0cb.jpg",
     "static/media/git-github-portada-blog.jpg": "/static/media/git-github-portada-blog.67ca35ffca0a9389ba0a.jpg",
@@ -19,10 +19,10 @@
     "static/media/imagen-logo-edteam.jpg": "/static/media/imagen-logo-edteam.2905d46f788f6752f34b.jpg",
     "index.html": "/index.html",
     "main.a3dec74b.css.map": "/static/css/main.a3dec74b.css.map",
-    "main.b52e1c7b.js.map": "/static/js/main.b52e1c7b.js.map"
+    "main.097e6e2f.js.map": "/static/js/main.097e6e2f.js.map"
   },
   "entrypoints": [
     "static/css/main.a3dec74b.css",
-    "static/js/main.b52e1c7b.js"
+    "static/js/main.097e6e2f.js"
   ]
 }
