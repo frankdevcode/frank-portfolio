@@ -134,6 +134,52 @@
 
 /*--------------------------------------------------------------------------*/
 
+/* SECCIÓN PROMOCIONAL DEL LIBRO */
+/* Contenedor de la sección promocional */
+.promotion-section {
+  background-color: #f4f4f4;  /* Fondo gris claro para diferenciar la sección */
+  padding: 20px;              /* Añade un espacio interno alrededor del contenido de 20px */
+  margin: 20px 0;             /* Añade un espacio de 20px arriba y abajo de la sección */
+  text-align: center;         /* Centra el texto y los elementos dentro de la sección */
+  border-radius: 10px;        /* Bordes redondeados de 10px para un aspecto moderno */
+}
+
+/* Estilo del título dentro de la sección promocional */
+.promotion-title {
+  font-size: 24px;            /* Tamaño de fuente grande para el título */
+  color: #333;                /* Color de texto oscuro */
+  margin-bottom: 15px;        /* Espacio de 15px debajo del título */
+  font-weight: bold;          /* Negrita para resaltar el título */
+}
+
+/* Estilo del párrafo de descripción dentro de la sección promocional */
+.promotion-description {
+  font-size: 18px;            /* Tamaño de fuente un poco más grande que el párrafo normal */
+  color: #666;                /* Color de texto gris para una lectura cómoda */
+  margin-bottom: 20px;        /* Espacio de 20px debajo del párrafo */
+}
+
+/* Estilo de los botones de la sección promocional */
+.promotion-button {
+  display: inline-block;      /* Hace que el botón sea un bloque alineado en línea */
+  background-color: #007bff;  /* Color de fondo azul */
+  color: #fff;                /* Color de texto blanco */
+  padding: 10px 20px;         /* Espaciado interno: 10px arriba/abajo y 20px izquierda/derecha */
+  margin: 10px;               /* Espaciado externo de 10px alrededor del botón */
+  text-decoration: none;      /* Elimina el subrayado del enlace */
+  border-radius: 5px;         /* Bordes redondeados de 5px para los botones */
+  font-size: 16px;            /* Tamaño de fuente mediano para el texto del botón */
+  transition: background-color 0.3s; /* Añade una transición suave para el cambio de color al pasar el ratón */
+}
+
+/* Cambia el color de fondo del botón al pasar el ratón */
+.promotion-button:hover {
+  background-color: #0056b3;  /* Color más oscuro para el efecto hover */
+}
+
+
+/*--------------------------------------------------------------------------*/
+
 
 /* Estilos para dispositivos móviles */
 @media (max-width: 768px) {

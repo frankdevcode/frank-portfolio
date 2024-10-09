@@ -65,6 +65,22 @@ const PostDetail = () => {
         </div>
       )}
 
+      {/* Sección promocional del libro */}
+      <div className="promotion-section">
+        <h2 className="promotion-title">¡Consigue el Libro Completo sobre Git y GitHub!</h2>
+        <p className="promotion-description">
+          Aprende todo lo que necesitas saber sobre Git y GitHub, desde los conceptos básicos hasta 
+          las técnicas avanzadas de colaboración en equipo y control de versiones. Disponible en 
+          Hotmart y Amazon Kindle.
+        </p>
+        <a href="https://go.hotmart.com/Y95923822T" target="_blank" rel="noopener noreferrer" className="promotion-button">
+          Comprar en Hotmart
+        </a>
+        {/*<a href="#" target="_blank" rel="noopener noreferrer" className="promotion-button">
+          Comprar en Amazon Kindle
+        </a>*/}
+      </div>
+
       {/* Contenido del post */}
       <div className="post-detail-content">
         {post.content.map((block, index) => {

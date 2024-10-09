@@ -182,7 +182,7 @@ const MainContentMobile = () => {
           {showDetails ? 'Ver menos' : 'Ver más'}
         </button>
         {showDetails && (
-          <div className='main-drop-down-information-container'>
+          <div className='main-drop-down-information-container-mobile'>
             {initialTechnologies.map((tech, index) => (
               <div className='container-to-handle-the-contents'>
                 <div className='icon-sessions-container-home'>

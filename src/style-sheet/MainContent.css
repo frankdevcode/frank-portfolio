@@ -94,6 +94,10 @@
   border-color: #0056b3; /* Cambia el borde en hover */
 }
 
+/* Contenedor principal opciones boton ver mas */
+.main-drop-down-information-container {
+  display: flex;
+}
 
 /* Contenedor hijo de las columnas */
 .child-container-project-content {
