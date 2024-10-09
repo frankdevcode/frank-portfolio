@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.1c5cb10b.css",
-    "main.js": "/static/js/main.0e24f8da.js",
+    "main.css": "/static/css/main.7419c84a.css",
+    "main.js": "/static/js/main.b52e1c7b.js",
     "static/media/sitio-web-frank.jpg": "/static/media/sitio-web-frank.fa584e3646e9ad0d726b.jpg",
     "static/media/rush-go-portada-blog.jpg": "/static/media/rush-go-portada-blog.f3887c7d24662be3f0cb.jpg",
+    "static/media/git-github-portada-blog.jpg": "/static/media/git-github-portada-blog.67ca35ffca0a9389ba0a.jpg",
     "static/media/python-portada-blog.jpg": "/static/media/python-portada-blog.5296bb02ad32b531ad48.jpg",
     "static/media/javascript-portada-blog.jpg": "/static/media/javascript-portada-blog.34144cb1e9eaf47cfeba.jpg",
     "static/media/logo-francisco-perlaza.png": "/static/media/logo-francisco-perlaza.9c7bb3e5cb10f926920f.png",
@@ -17,11 +18,11 @@
     "static/media/imagen-logo-platzi.jpg": "/static/media/imagen-logo-platzi.26ab9702b75495f1ddae.jpg",
     "static/media/imagen-logo-edteam.jpg": "/static/media/imagen-logo-edteam.2905d46f788f6752f34b.jpg",
     "index.html": "/index.html",
-    "main.1c5cb10b.css.map": "/static/css/main.1c5cb10b.css.map",
-    "main.0e24f8da.js.map": "/static/js/main.0e24f8da.js.map"
+    "main.7419c84a.css.map": "/static/css/main.7419c84a.css.map",
+    "main.b52e1c7b.js.map": "/static/js/main.b52e1c7b.js.map"
   },
   "entrypoints": [
-    "static/css/main.1c5cb10b.css",
-    "static/js/main.0e24f8da.js"
+    "static/css/main.7419c84a.css",
+    "static/js/main.b52e1c7b.js"
   ]
 }
