@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a3dec74b.css",
-    "main.js": "/static/js/main.65a5624b.js",
+    "main.css": "/static/css/main.db1991f6.css",
+    "main.js": "/static/js/main.6b633787.js",
     "static/media/sitio-web-frank.jpg": "/static/media/sitio-web-frank.fa584e3646e9ad0d726b.jpg",
     "static/media/rush-go-portada-blog.jpg": "/static/media/rush-go-portada-blog.f3887c7d24662be3f0cb.jpg",
     "static/media/git-github-portada-blog.jpg": "/static/media/git-github-portada-blog.67ca35ffca0a9389ba0a.jpg",
@@ -18,11 +18,11 @@
     "static/media/imagen-logo-platzi.jpg": "/static/media/imagen-logo-platzi.26ab9702b75495f1ddae.jpg",
     "static/media/imagen-logo-edteam.jpg": "/static/media/imagen-logo-edteam.2905d46f788f6752f34b.jpg",
     "index.html": "/index.html",
-    "main.a3dec74b.css.map": "/static/css/main.a3dec74b.css.map",
-    "main.65a5624b.js.map": "/static/js/main.65a5624b.js.map"
+    "main.db1991f6.css.map": "/static/css/main.db1991f6.css.map",
+    "main.6b633787.js.map": "/static/js/main.6b633787.js.map"
   },
   "entrypoints": [
-    "static/css/main.a3dec74b.css",
-    "static/js/main.65a5624b.js"
+    "static/css/main.db1991f6.css",
+    "static/js/main.6b633787.js"
   ]
 }
