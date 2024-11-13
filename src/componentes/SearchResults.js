@@ -1,8 +1,7 @@
-/* SearchResults.js */
-
-/* Resultados de sugerencias de busquedas al buscar en la barra de busqueda */
+// SearchResults.js
 import React from 'react';
-import { useLocation, Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
+import SearchResultsDisplay from '../componentes/SearchResultsDisplay';
 
 const SearchResults = ({ posts }) => {
   const query = new URLSearchParams(useLocation().search).get('q');
@@ -11,18 +10,7 @@ const SearchResults = ({ posts }) => {
   );
 
   return (
-    <div className="search-results-container">
-      <h2 className="search-results-title">Resultados de búsqueda para: "{query}"</h2>
-      {filteredPosts.length > 0 ? (
-        filteredPosts.map(post => (
-          <Link key={post.id} to={post.path} className="search-result-item">
-            {post.title}
-          </Link>
-        ))
-      ) : (
-        <div className="no-results">No se encontraron resultados</div>
-      )}
-    </div>
+    <SearchResultsDisplay posts={filteredPosts} searchTerm={query} />
   );
 };
 

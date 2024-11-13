@@ -1,7 +1,8 @@
 // Importa React y el hook useState
 import React, { useState } from 'react';
-import '../style-sheet/MainContent.css';
+import '../style-sheet/Home.css';
 import { Link } from 'react-router-dom';
+import blogPosts from '../data/BlogPostData';
 
 // Importamos los iconos de React
 import { AiOutlineRight } from "react-icons/ai";
@@ -40,7 +41,10 @@ const informaciones = [
 const imagenes = [imagenLogoUniremington, imagenLogoCisco, imagenLogoEdteam, imagenLogoPlatzi, imagenLogoSena, imagenLogoUniremington, imagenLogoSena, imagenLogoPlatzi];
 
 // Componente principal
-const MainContent = () => {
+const Home = () => {
+
+  // Seleccionamos los tres artículos más recientes del blog
+  const recentArticles = blogPosts.slice(-3).reverse();
 
   // Definimos las tecnologías iniciales
   const initialTechnologies = [
@@ -65,8 +69,7 @@ const MainContent = () => {
   const mostrarVistaPrevia = (imagen, index) => {
     setImagenVistaPrevia(imagen);
     setSeleccionado(index); // Actualiza el estado al pasar el ratón sobre el contenedor de información
-  };
-  
+  };  
 
   return (
     <div className='main-container-content-home'>
@@ -161,7 +164,7 @@ const MainContent = () => {
         {showDetails && (
           <div className='main-drop-down-information-container'>
             {initialTechnologies.map((tech, index) => (
-              <div className='container-to-handle-the-contents'>
+              <div className='container-to-handle-the-contents column-two-fk'>
                 <div className='icon-sessions-container-home'>
                   <SiReact className='home-session-icons' />
                 </div>
@@ -172,7 +175,7 @@ const MainContent = () => {
             ))}
 
             {/* Nueva sección oculta con la tecnología de JavaScript */}
-            <div className='container-to-handle-the-contents'>
+            <div className='container-to-handle-the-contents column-two-fk'>
               <div className='icon-sessions-container-home'>
                 <SiGit className='home-session-icons' />
               </div>
@@ -181,7 +184,7 @@ const MainContent = () => {
               {/* Agrega mas contenido segun sea necesario */}
             </div>
 
-            <div className='container-to-handle-the-contents'>
+            <div className='container-to-handle-the-contents column-two-fk'>
               <div className='icon-sessions-container-home'>
                 <SiGithub className='home-session-icons' />
               </div>
@@ -190,7 +193,7 @@ const MainContent = () => {
               {/* Agrega mas contenido segun sea necesario */}
             </div>
 
-            <div className='container-to-handle-the-contents'>
+            <div className='container-to-handle-the-contents column-two-fk'>
               <div className='icon-sessions-container-home'>
                 <SiMysql className='home-session-icons' />
               </div>
@@ -201,6 +204,22 @@ const MainContent = () => {
           </div>
         )}
       </div>
+
+      {/* Secciones de Blog */}
+      <section className="recent-articles-section">
+        <h2 className="title-home-content-blog">Artículos recientes</h2>
+        <div className="articles-container">
+          {recentArticles.map((post) => (
+            <Link to={`/blog/${post.shortSlug}`} key={post.id} className="blog-card-link">
+              <div className="article-content">
+                <img src={post.image} alt={post.title} className="article-image" />
+                <h3 className="article-title">{post.title}</h3>
+                <p className="article-summary">{post.summary}...</p> {/* Asegúrate de usar post.summary */}
+              </div>
+            </Link>
+          ))}
+        </div>
+      </section>
 
       {/* Secion 3 */}
       <div className='container-two-title-home'>
@@ -228,4 +247,4 @@ const MainContent = () => {
   );
 }
   
-export default MainContent; // Exportando el componente
+export default Home; // Exportando el componente

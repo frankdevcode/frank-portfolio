@@ -38,6 +38,9 @@ const Contact = () => {
       </div>
       <div className='contact-paragraph-container'>
         <p className='contact-paragraph'>
+        <p className="contact-info">
+          Importante: Para garantizar la recepción, por favor contácta a través del correo electrónico.
+        </p>
           <span className='bullet-point'>•</span> Correo Electrónico: franciscoperlazza@gmail.com
         </p>
       </div>

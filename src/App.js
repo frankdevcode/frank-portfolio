@@ -1,42 +1,90 @@
 // App.js
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+
+import './App.css';
+
 import Header from './componentes/Header';
+import TwistBanner from './componentes/TwistBanner';
 import Footer from './componentes/Footer';
-import MainContent from './componentes/MainContent';
+import Home from './componentes/Home';
+import HomeMobile from './componentes/HomeMobile';
 import PrivacyPolicy from './componentes/PrivacyPolicy';
 import TermsAndConditions from './componentes/TermsAndConditions';
 import AboutFrancisco from './componentes/AboutFrancisco';
 import Contact from './componentes/Contact';
 import HelpCenter from './componentes/HelpCenter';
-import Project from './componentes/ProjectFrank';
+import ProjectFrank from './componentes/ProjectFrank';
 import Ecommerce from './componentes/Ecommerce';
 import ApiProjects from './componentes/ApiProject';
 import MiProjects from './componentes/MiProjects';
-import Novedades from './componentes/Novedades';
+import PerfilProfesional from './componentes/PerfilProfesional';
 import Blog from './componentes/Blog';
 import PostDetail from './componentes/PostDetail';
-import SearchResultsDisplay from './componentes/SearchResultsDisplay';
-import HeaderMobile from './componentes/HeaderMobile';
-import MainContentMobile from './componentes/MainContentMobile';
-
-import './App.css';
+import SearchResults from './componentes/SearchResults';
 
 function App() {
   const [isMobile, setIsMobile] = useState(false);
 
-  // Lista de posts resultados de busqueda ENTER o boton buscar
   const [posts, setPosts] = useState([
     // Proyectos
-    { title: 'Diseño y desarrollo del sitio web profesional Frank', content: 'Este proyecto es la creación de un portafolio personal para mos...', path: '/frank' },
-    { title: 'Desarrollo de una plataforma de comercio electrónico', content: 'Este proyecto ofrece una plataforma de comercio en línea inno...', path: '/ecommerce' },
-    { title: 'Creación de una API potente y versátil para el comercio electrónico', content: 'Esta API ha sido diseñada para optimizar el rendimien...', path: '/api' },
-
-    // Articulos del blog
-    { title: 'El rey de la simplicidad y la Inteligencia Artificial', content: 'Python se mantiene como un pilar fundamental en el ecosistema de la programación. Si bien fue creado...', path: '/post/1' },
-    { title: 'La columna vertebral del desarrollo web', content: 'JavaScript continúa siendo la piedra angular del desarrollo web, pero su influencia no se limita a l...', path: '/post/2' },
-    { title: 'La batalla por el futuro de la programación', content: 'En el ecosistema de programación actual, dos lenguajes han emergido como los favoritos para el desar...', path: '/post/3' },
-  ]);
+    { 
+        title: 'Diseño y desarrollo del sitio web profesional Frank', 
+        content: 'Este proyecto es la creación de un portafolio personal...', 
+        summary: 'Portafolio web personal con diseño moderno y responsive',
+        path: '/frank', 
+        type: 'project' 
+    },
+    { 
+        title: 'Desarrollo de una plataforma de comercio electrónico', 
+        content: 'Este proyecto ofrece una plataforma de comercio en línea...', 
+        summary: 'Plataforma e-commerce completa con carrito de compras y pagos online',
+        path: '/ecommerce', 
+        type: 'project' 
+    },
+    { 
+        title: 'Creación de una API potente y versátil para el comercio electrónico', 
+        content: 'Esta API ha sido diseñada...', 
+        summary: 'API RESTful para gestión de productos, usuarios y transacciones',
+        path: '/api', 
+        type: 'project' 
+    },
+    
+    // Post Blog con "shortSlug"
+    { 
+        title: 'El rey de la simplicidad y la Inteligencia Artificial', 
+        content: 'Python se mantiene como un pilar...', 
+        summary: 'Explorando el rol de Python en el desarrollo de IA y su simplicidad característica',
+        path: '/blog/python', 
+        shortSlug: 'python', 
+        type: 'blog' 
+    },
+    { 
+        title: 'La columna vertebral del desarrollo web', 
+        content: 'JavaScript continúa siendo...', 
+        summary: 'Análisis del impacto de JavaScript en el desarrollo web moderno',
+        path: '/blog/javascript', 
+        shortSlug: 'javascript', 
+        type: 'blog' 
+    },
+    { 
+        title: 'La batalla por el futuro de la programación', 
+        content: 'En el ecosistema de programación...', 
+        summary: 'Comparativa entre Rust y Go: rendimiento, seguridad y casos de uso',
+        path: '/blog/rust-go', 
+        shortSlug: 'rust-go', 
+        type: 'blog' 
+    },
+    { 
+        title: 'Introducción a Git y GitHub', 
+        content: 'Git y GitHub se han convertido...', 
+        summary: 'Guía básica sobre control de versiones con Git y colaboración en GitHub',
+        path: '/blog/git-github', 
+        shortSlug: 'git-github', 
+        type: 'blog' 
+    },
+  ]); 
+  
 
   const handleResize = () => {
     setIsMobile(window.innerWidth <= 768);
@@ -54,41 +102,32 @@ function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <div className='App'>
-        {isMobile ? <HeaderMobile /> : <Header />}
+        <Header />
         <Routes>
+          <Route path='/' element={
+            <>
+              <TwistBanner />
+              {isMobile ? <HomeMobile /> : <Home />}
+            </>
+          } />
           <Route path='/api' element={<ApiProjects />} />
           <Route path='/ecommerce' element={<Ecommerce />} />
-          <Route path='/frank' element={<Project />} />
+          <Route path='/frank' element={<ProjectFrank />} />
           <Route path='/ayuda' element={<HelpCenter />} />
           <Route path='/politica-de-privacidad' element={<PrivacyPolicy />} />
           <Route path='/terminos-y-condiciones' element={<TermsAndConditions />} />
           <Route path='/sobre-francisco' element={<AboutFrancisco />} />
           <Route path='/contacto' element={<Contact />} />
           <Route path='/proyectos' element={<MiProjects />} />
-          <Route path='/' element={isMobile ? <MainContentMobile /> : <MainContent />} />
-          <Route path='/novedades' element={<Novedades />} />
-          <Route exact path='/blog' element={<Blog />} />
+          <Route path='/perfil-profesional' element={<PerfilProfesional />} />
+          <Route path='/blog' element={<Blog />} />
           <Route path='/search' element={<SearchResults posts={posts} />} />
-          <Route path='/post/:id' element={<PostDetail />} />
-          {/*<Route path='/post/:id' element={<PostDetail posts={posts} />} /> Si el componente necesita recibir posts como prop*/}
+          <Route exact path='/blog/:shortSlug' element={<PostDetail />} />
         </Routes>
         <Footer />
       </div>
     </Router>
   );
 }
-
-// Componente para manejar los resultados de búsqueda
-const SearchResults = ({ posts }) => {
-  const location = useLocation();
-  const searchTerm = new URLSearchParams(location.search).get('q');
-
-  // Filtrar los posts que coincidan con el término de búsqueda
-  const filteredPosts = posts.filter((post) =>
-    post.title.toLowerCase().includes(searchTerm.toLowerCase())
-  );
-
-  return <SearchResultsDisplay posts={filteredPosts} searchTerm={searchTerm} />;
-};
 
 export default App;

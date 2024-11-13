@@ -12,7 +12,7 @@ const Ecommerce = () => {
   return (
     <div className="ecommerce-container">
       <header className="ecommerce-header">
-        <h1>Desarrollo de una Plataforma de Comercio Electrónico</h1>
+        <h2>Desarrollo de una Plataforma de Comercio Electrónico</h2>
         <p>Este proyecto ofrece una plataforma de comercio en línea innovadora y profesional, desarrollada para mejorar la gestión de productos y ventas.</p>
       </header>
 

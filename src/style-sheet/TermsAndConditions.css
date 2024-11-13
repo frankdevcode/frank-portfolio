@@ -4,6 +4,7 @@
   margin: 0 auto; /* Centrar el contenedor en la página */
   padding: 20px; /* Añadir espacio interno al contenedor */
   border-radius: 8px; /* Esquinas redondeadas del contenedor */
+  margin-top: 70px;
 }
 
 /* Estilos para los encabezados dentro del contenedor */

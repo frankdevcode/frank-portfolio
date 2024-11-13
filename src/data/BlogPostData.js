@@ -2,8 +2,10 @@ const blogPosts = [
   {
     id: 1,
     title: 'El rey de la simplicidad y la Inteligencia Artificial',
+    shortSlug: 'python',
     date: '2024-09-10',
     image: require('../imagenes/blog/python-portada-blog.jpg'),
+    summary: 'Python se mantiene como un pilar fundamental en el ecosistema de la programación. Si bien fue creado',
     content: [
       { type: 'p', text: 'Python se mantiene como un pilar fundamental en el ecosistema de la programación. Si bien fue creado en 1991, su crecimiento en popularidad ha sido exponencial durante la última década, particularmente gracias a su facilidad de uso, su sintaxis clara y su papel dominante en el desarrollo de soluciones avanzadas en inteligencia artificial, machine learning y ciencia de datos. Para cualquier ingeniero de sistemas, científico de datos o desarrollador, dominar Python no es solo una ventaja, sino una necesidad. Acompáñanos a explorar por qué Python sigue siendo el rey en 2024 y cómo ha evolucionado para adaptarse a las tendencias tecnológicas actuales.' },
       
@@ -56,8 +58,10 @@ const blogPosts = [
   {
     id: 2,
     title: 'La columna vertebral del desarrollo web',
+    shortSlug: 'javascript',
     date: '2024-09-15',
     image: require('../imagenes/blog/javascript-portada-blog.jpg'),
+    summary: 'JavaScript continúa siendo la piedra angular del desarrollo web, pero su influencia no se limita a l',
     content: [
       { type: 'p', text: 'JavaScript continúa siendo la piedra angular del desarrollo web, pero su influencia no se limita a las páginas que ves en el navegador. En un ecosistema tecnológico cada vez más complejo y diverso, JavaScript ha evolucionado para desempeñar un papel esencial en ámbitos como las aplicaciones móviles, el desarrollo backend, la inteligencia artificial, la realidad aumentada y virtual, y hasta la computación en la nube. ¿Por qué JavaScript sigue siendo tan relevante en 2024? Vamos a desglosarlo.' },
 
@@ -115,8 +119,10 @@ const blogPosts = [
   {
     id: 3,
     title: 'La batalla por el futuro de la programación',
+    shortSlug: 'rust-go',
     date: '2024-09-20',
     image: require('../imagenes/blog/rush-go-portada-blog.jpg'),
+    summary: 'En el ecosistema de programación actual, dos lenguajes han emergido como los favoritos para el desar',
     content: [
       { type: 'p', text: 'En el ecosistema de programación actual, dos lenguajes han emergido como los favoritos para el desarrollo de software eficiente y escalable: Rust y Go. Ambos lenguajes, aunque tienen enfoques diferentes, están diseñados para abordar problemas similares, como la construcción de sistemas confiables, eficientes y rápidos. En este artículo, vamos a explorar en detalle las características clave de Rust y Go, sus diferencias, similitudes, y los casos de uso en los que cada uno sobresale.' },
 
@@ -174,9 +180,11 @@ const blogPosts = [
   },
   {
     id: 4,
-    title: 'El Dúo Indispensable para el Desarrollo de Software',
+    title: 'Introducción a Git y GitHub',
+    shortSlug: 'git-github',
     date: '2024-09-20',
     image: require('../imagenes/blog/git-github-portada-blog.jpg'),
+    summary: 'En el dinámico mundo del desarrollo de software, la gestión eficiente del código fuente y la colabor',
     content: [
       { type: 'p', text: 'En el dinámico mundo del desarrollo de software, la gestión eficiente del código fuente y la colaboración en equipo son esenciales para el éxito de cualquier proyecto. Dos herramientas fundamentales que han revolucionado la forma en que los desarrolladores manejan el control de versiones y la colaboración son Git y GitHub. En este artículo, exploraremos en profundidad cómo estas tecnologías siguen siendo pilares indispensables para el desarrollo moderno en 2024, analizando sus características clave, beneficios, y cómo su adopción puede mejorar drásticamente los flujos de trabajo tanto individuales como en equipo.' },
 

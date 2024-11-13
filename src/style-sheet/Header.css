@@ -1,135 +1,246 @@
-/* Contenedor principal del header */
-/* src/Header.css */
-.main-container-of-header-number-one {
-  background: linear-gradient(90deg, #4B0082, #1e8fff82); /* Cambia el color de fondo según tus preferencias */
-  padding: 10px; /* Ajusta el espacio interno según sea necesario */
-  margin: 0;
+/* Variables de color, fuente y espaciado */
+:root {
+  --color-primary: #4a90e2;
+  --color-secondary: #333333;
+  --color-background: #ffffff;
+  --color-text: #333333;
+  --color-text-light: #666666;
+  --color-hover: #357abd;
+  --color-accent: #f2f2f2;
+
+  --font-family: 'Roboto', sans-serif;
+  --font-size-default: 1rem;
+  --font-size-title: 1.25rem;
+  --font-size-small: 0.875rem;
+
+  --transition-speed: 0.3s;
+  --header-padding: 1rem 2rem;
 }
 
-.child-container-number-two {
-  max-width: 1200px;
-  min-height: 350px;
-  margin: 0 auto;
+/* Contenedor general del header */
+.menu-container {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.85);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
 }
 
-/* Contenedor del menú de navegación */
-.container-three-menu-navigation {
-  justify-content: space-between;
-  align-items: center;
+.menu-container.scrolled {
+  background-color: rgba(143, 115, 115, 0.95);
 }
+
+.logo {
+  height: 40px;
+  transition: opacity var(--transition-speed);
+}
+
+/* --------------------------------------------------//------------------------------------------
+   Estilos de escritorio
+------------------------------------------------------------------------------------------------- */
 
 .flex-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
 }
 
 .logo-container {
-  margin-right: auto; /* Mueve el logo al extremo izquierdo */
+  flex-shrink: 0;
 }
 
-/* Contenedor de las listas del menú de navegación */
+.logo-container .LogoLink {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
 .menu-navigation-container {
   display: flex;
-  gap: 20px; /* Espaciado entre los elementos del menú */
-  margin-left: auto; /* Mueve el menú al extremo derecho */
+  gap: 1.5rem;
+  margin-left: auto;
 }
 
-/* Listas del menú de navegación */
 .menu-navigation-container a {
+  font-weight: 500;
+  font-size: 1rem;
   text-decoration: none;
-  color: #f8f8f8; /* Blanco suave */
-}
-
-/* Cambio de color al pasar el cursor por las listas del menú de navegación */
-.menu-navigation-container a:hover {
-  color: #ffffff; /* Blanco más brillante al pasar el mouse si lo deseas */
-}
-
-/* Estilos para el logo */
-.Logo {
-  max-width: 90px; 
-  height: auto;
-  margin: 0 auto;
-  display: block;
-  background-color: transparent;
-  transition: all 0.2s ease-in-out;
-  
-  /* Aumenta el tamaño al pasar el cursor 
-  &:hover { 
-    transform: scale(1.1);
-  } */
-}
-
-.LogoLink {
-  text-decoration: none;
-  color: white;
-}
-
-/* Contendor de la informacion del giro banner */
-.container-header-number-three-twist-banner {
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
-
-.container-child-info-banner {
-}
-
-/* Titulo uno giro banner */
-.title-one-twist-banner {
-  font-size: 35px;
   color: #f8f8f8;
-  font-weight: normal;
+  position: relative;
+  transition: color 0.3s ease;
 }
 
-/* Titulo dos giro banner */
-.paragraph-one-twist-banner {
-  font-size: 50px;
-  color: #006eff;
-  margin: 0;
-  font-weight: normal;
+.menu-navigation-container a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1.5px;
+  left: 0;
+  bottom: -4px;
+  background-color: #818181;
+  transition: width 0.3s ease;
 }
 
-/* Contenedor para el nombre */
-.container-engineer-fp-twist-banner {
-  padding: 0;
+.menu-navigation-container a:hover {
+  color: #ffffff;
 }
 
-/* Ingeniero FP */
-.text-engineer-fp-twist-banner {
-  font-size: 14px;
-  color: #949494;
-  text-align: center;
+.menu-navigation-container a:hover::after {
+  width: 100%;
 }
 
+/* --------------------------------------------------//------------------------------------------
+   Estilos para dispositivos móviles
+------------------------------------------------------------------------------------------------- */
 
-
-
-/* Estilos para dispositivos móviles */
-/* Ocultar el menú de dispositivos móviles por defecto */
-.header-mobile {
-  display: none;
-}
-
-.main-container-content-home-mobile {
-  display: none;
-}
-
-/* Media query para dispositivos móviles */
 @media (max-width: 768px) {
-  .main-container-of-header-number-one {
-    display: none; /* Ocultando el header del ordenador en mobile */
+  /* Contenedor principal en dispositivos móviles */
+  .flex-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
   }
 
-  .main-container-content-home {
-    display: none; /* Ocultando el contenido Main del ordenador */
+  .menu-container {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.85);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
-  .header-mobile {
-    display: block; /* Mostrando el header para movil */
+  /* Ocultar la navegación de escritorio y mostrar el botón de menú móvil */
+  .menu-navigation-container {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
   }
 
-  .main-container-content-home-mobile {
-    display: block; /* Mostrando contenenido del main para movil */
+  /* Botón de menú móvil (Hamburguesa) */
+  .menu-toggle-container {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+  }
+
+  .menu-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0;
+  }
+
+  .menu-toggle .bar {
+    width: 24px;
+    height: 3px;
+    background-color: #f1f1f1;
+    border-radius: 2px;
+    transition: all var(--transition-speed);
+  }
+
+  .menu-container.scrolled .menu-toggle .bar {
+    background-color: var(--color-background);
+  }
+
+  /* Sidebar (Menú desplegable) */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 75%;
+    max-width: 280px;
+    background-color: #151515;
+    color: var(--color-background);
+    transform: translateX(-100%);
+    transition: transform var(--transition-speed);
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+    z-index: 200;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .sidebar.active {
+    transform: translateX(0);
+  }
+
+  /* Header en el sidebar */
+  .sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1.5rem;
+    font-size: var(--font-size-title);
+    color: var(--color-background);
+    margin-left: 15px;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.326);
+  }
+
+  .sidebar-greeting {
+    font-size: var(--font-size-title);
+  }
+
+  .close-icon {
+    font-size: 1.5rem;
+    color: var(--color-background);
+    cursor: pointer;
+    transition: color var(--transition-speed);
+  }
+
+  .close-icon:hover {
+    color: var(--color-accent);
+  }
+
+  /* Navegación en el Sidebar */
+  .sidebar-nav {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .sidebar-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .sidebar-nav li {
+    padding: 0.75rem 1rem;
+    border-radius: 5px;
+    transition: background-color var(--transition-speed);
+  }
+
+  .sidebar-nav li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .sidebar-nav a {
+    color: var(--color-background);
+    font-size: var(--font-size-default);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color var(--transition-speed);
+  }
+
+  .sidebar-nav a:hover {
+    color: var(--color-accent);
+  }
+
+  /* Estilos del logo en móvil */
+  .logo {
+    height: 32px;
+    padding-top: 0.3rem;
   }
 }

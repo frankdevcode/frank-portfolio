@@ -17,12 +17,14 @@
   margin: 20px;
   font-size: 2.1rem;
   color: #d9d9d9;
+  margin-top: 70px;
 }
 
 /* Contenedor seccion 1 home */
 .container-one-of-home-sections {
   display: flex;
   margin: 0;
+  margin-top: 50px;
 }
 
 /* Transición suave para el desplazamiento del ícono al pasar el cursor */
@@ -97,6 +99,25 @@
 /* Contenedor principal opciones boton ver mas */
 .main-drop-down-information-container {
   display: flex;
+  margin-top: 10rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.container-to-handle-the-contents {
+  flex: 1;
+  margin-right: 20px;
+  border-radius: 10px;
+  padding: 0 20px 0 20px;
+  background-color: #151515;
+  padding-top: 40px;
+}
+.container-to-handle-the-contents:last-child {
+  margin-right: 0;
+}
+
+.column-two-fk {
+  background-color: #191919;
 }
 
 /* Contenedor hijo de las columnas */
@@ -145,6 +166,7 @@
   margin: 20px 0 20px 0;
   font-size: 2.1rem;
   color: #d9d9d9;
+  margin-top: 70px;
 }
 /* Titulos secciones */
 .titles-for-sections-two {
@@ -161,18 +183,7 @@
   border-radius: 10px;
   margin: 10px 0;
   background: linear-gradient(90deg, rgb(21, 21, 21), #ffffff, rgb(21, 21, 21));
-}
-
-.container-to-handle-the-contents {
-  flex: 1;
-  margin-right: 20px;
-  border-radius: 10px;
-  padding: 0 20px 0 20px;
-  background-color: #151515;
-  padding-top: 40px;
-}
-.container-to-handle-the-contents:last-child {
-  margin-right: 0;
+  margin-top: 50px;
 }
 
 /* Estilos para el contenedor del icono */
@@ -190,9 +201,94 @@
   color: #b8b8b8;
 }
 
+/* ---------------------------------------------//----------------------------------------------*/
+
+/* Seccion tres */
+/* Estilo general de la sección de artículos recientes */
+.recent-articles-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 90px;
+}
+
+.title-home-content-blog {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  color: #d9d9d9;
+}
+
+.articles-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 20px 0;
+}
+
+.blog-card-link {
+  text-decoration: none;
+  color: inherit;
+  height: 100%; /* Asegura que el enlace ocupe toda la altura disponible */
+  display: block; /* Necesario para que height: 100% funcione */
+}
+
+.blog-card-link :hover {
+  background-color: #141c36;
+}
+
+.article-content {
+  background-color: #1d2029;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  height: 100%; /* Hace que el contenido ocupe toda la altura */
+  display: flex; /* Establece un contenedor flexible */
+  flex-direction: column; /* Organiza los elementos en columna */
+}
+
+.article-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  flex-shrink: 0; /* Evita que la imagen se encoja */
+}
+
+.article-title {
+  padding: 15px 20px;
+  margin: 0;
+  font-size: 1.25rem;
+  color: #d9d9d9;
+  flex-shrink: 0; /* Evita que el título se encoja */
+}
+
+.article-summary {
+  padding: 0 20px 20px;
+  margin: 0;
+  color: #7d7d7d;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  flex-grow: 1; /* Permite que el resumen ocupe el espacio restante */
+  display: flex; /* Necesario para alinear el texto al principio */
+  align-items: flex-start; /* Alinea el texto al principio */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .title-home-content-blog {
+    font-size: 2rem;
+  }
+  
+  .articles-container {
+    grid-template-columns: 1fr;
+  }
+}
 
 
-/* Sección tres - *cambiar las clases a ingles* */
+
+
+
+
+/* Sección cuatro - *cambiar las clases a ingles* */
 /* Seccion para  cambio de imagenes en el home */
 .contenedor-principal {
   display: flex;

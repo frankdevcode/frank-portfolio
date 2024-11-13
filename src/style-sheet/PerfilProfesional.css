@@ -1,0 +1,217 @@
+/* Contenedor principal */
+.perfil-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #333;
+  margin-top: 70px;
+}
+
+/* Banner personalizable */
+.perfil-banner {
+  width: 100%;
+  height: 220px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px 8px 0 0;
+  position: relative;
+}
+
+/* Contenedor de columnas */
+.perfil-columns {
+  display: flex;
+  gap: 20px;
+}
+
+/* Columna izquierda (más estrecha) */
+.perfil-column-left {
+  flex: 1;
+  position: relative;
+
+  background-color: #1e1e1e; /* Fondo oscuro cálido */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra suave */
+  border: 1px solid #333333; /* Borde sutil */
+}
+
+/* Foto de perfil */
+.perfil-photo-container {
+  position: absolute;
+  top: -80px;
+  left: 20px;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Detalles del perfil */
+.perfil-details {
+  margin-top: 80px;
+  text-align: left;
+  line-height: 1.5;
+}
+
+/* Estilos para enlaces de LinkedIn, Twitter y GitHub en la sección de perfil */
+.perfil-details a {
+  text-decoration: none; /* Elimina el subrayado */
+  color: #3ea6ff; /* Color elegante (puedes ajustarlo al tono que prefieras) */
+  transition: color 0.3s ease; /* Transición para el cambio de color */
+}
+
+/* Hover para enlaces sociales */
+.perfil-details a:hover {
+  color: #3b93fe; /* Color más oscuro al pasar el cursor */
+}
+
+/* Informacion redes sociales */
+.perfil-details p {
+  color: #cccccc;;
+}
+
+/* perfil profesional */
+.perfil-details .profile-professionn {
+  color: #666;
+}
+
+/* perfil profesional colunna derecha */
+.profession-right-column {
+  font-size: 16px;
+  color: #666;
+  margin: 10px 0 45px;
+  font-weight: normal;
+}
+
+/* Contenedor seccion idiomas */
+.language-section-container {
+  background-color: rgba(20, 23, 24, 0.568);
+  padding: 20px;
+  border-radius: 8px;
+  line-height: 1.5;
+  border: 2px solid rgba(30, 59, 114, 0.673);
+}
+
+/* Titulo de idiomas */
+.language-section-container h3 {
+  color: #1e3c72;
+}
+
+/* Lista de idiomas */
+.language-section-container ul {
+  color: #666;
+}
+
+/* Contenedor solicitar CV */
+.container-request-cv {
+  background-color: rgba(42, 59, 77, 0.267);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  text-align: left;
+  border: 2px solid rgba(20, 23, 24, 0.8);
+}
+
+/* Titulo solicitar CV */
+.container-request-cv h3 {
+  margin: 0 0 10px;
+  color: #1e3c72;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Parrafo solicitar CV */
+.container-request-cv p {
+  margin-bottom: 15px;
+  color: #666;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Boton solicitar CV */
+.btn-request-cv {
+  background-color: #1e3c72;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover solicitar CV */
+.btn-request-cv:hover {
+  background-color: #154a8a;
+}
+
+/* Columna derecha (más ancha) */
+.perfil-column-right {
+  flex: 2;
+}
+
+/* Sección general */
+.perfil-section {
+  background-color: #1e1e1e; /* Fondo oscuro cálido */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra suave */
+  border: 1px solid #333333; /* Borde sutil */
+}
+
+/* Aplica el margen inferior solo a las secciones que no sean la última */
+.perfil-section:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.perfil-section h2 {
+  color: #f1f1f1;
+  font-size: 2.7rem;
+  margin: 10px 0;
+}
+
+/* Títulos de secciones */
+.perfil-section h3 {
+  color: #3ea6ff; /* Azul claro y elegante */
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.perfil-section h4 {
+  color: #cccccc;
+}
+
+/* Textos de contenido */
+.perfil-section p,
+.perfil-section li {
+  color: #cccccc; /* Gris claro para buena legibilidad */
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  /* Contenedor principal */
+  .perfil-container {
+    margin-top: 0;
+  }
+
+  .perfil-columns {
+    flex-direction: column;
+  }
+
+  .perfil-photo-container {
+    position: static;
+    margin-top: -50px;
+  }
+
+  .perfil-details {
+    margin-left: 0;
+    margin-top: 20px;
+    text-align: center;
+  }
+}

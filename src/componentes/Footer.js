@@ -61,7 +61,7 @@ function Footer() {
                 </a>
               </div>
               <div className='container-columns-icons'>
-                <a href='https://web.facebook.com/franciscopza/' target='_blank' rel='noopener noreferrer' className='social-media-icons-link' aria-label='Facebook'>
+                <a href='https://web.facebook.com/franciscoders/' target='_blank' rel='noopener noreferrer' className='social-media-icons-link' aria-label='Facebook'>
                   <AiFillFacebook className='social-icons-components' />
                 </a>
               </div>
@@ -71,12 +71,12 @@ function Footer() {
                 </a>
               </div>
               <div className='container-columns-icons'>
-                <a href='https://www.instagram.com/frankdevcoder/' target='_blank' rel='noopener noreferrer' className='social-media-icons-link' aria-label='Instagram'>
+                <a href='https://www.instagram.com/frankdevcode/' target='_blank' rel='noopener noreferrer' className='social-media-icons-link' aria-label='Instagram'>
                   <AiOutlineInstagram className="social-icons-components" />
                 </a>
               </div>
               <div className='container-columns-icons'>
-                <a href='https://x.com/frankpzza' target='_blank' rel='noopener noreferrer' className='social-media-icons-link' aria-label='Twitter'>
+                <a href='https://x.com/franklaza' target='_blank' rel='noopener noreferrer' className='social-media-icons-link' aria-label='Twitter'>
                   <AiOutlineTwitter className='social-icons-components' />
                 </a>
               </div>

@@ -5,6 +5,7 @@
   padding: 20px;
   font-family: 'Arial', sans-serif;
   color: #afafaf;
+  margin-top: 70px;
 }
 
 /* Header */
@@ -15,7 +16,7 @@
   border-bottom: 2px solid #eaeaea;
 }
 
-.ecommerce-header h1 {
+.ecommerce-header h2 {
   font-size: 2.5rem;
   color: #f1f1f1;
   margin-bottom: 10px;
@@ -99,6 +100,10 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .ecommerce-container {
+    margin-top: 0;
+  }
+
   .ecommerce-header h1 {
     font-size: 2rem;
   }

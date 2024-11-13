@@ -5,6 +5,7 @@
   margin: 0 auto;
   padding: 20px;
   border-radius: 10px;
+  margin-top: 70px;
 }
 
 .title-help-center {
@@ -70,6 +71,10 @@
 
 /* Media Queries */
 @media (max-width: 768px) {
+  
+  .help-center-container {
+    margin-top: 0;
+  }
   .title-help-center {
     font-size: 2rem;
   }

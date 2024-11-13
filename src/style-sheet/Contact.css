@@ -4,6 +4,7 @@
   margin: 0 auto;
   padding: 20px;
   border-radius: 8px;
+  margin-top: 70px;
 }
 
 /* Estilos para los encabezados dentro del contenedor */
@@ -24,6 +25,22 @@
 /* Estilos para el contenedor del título */
 .container-title-contact {
   margin-bottom: 20px;
+}
+
+/* Estilos para el mensaje de contacto */
+.contact-info {
+  font-size: 1rem;
+  color: #4a5568;  /* Un tono gris oscuro para el texto */
+  font-weight: 500;  /* Peso de fuente moderado */
+  text-align: center;  /* Centrado del texto */
+  margin: 1.5rem 0;  /* Espaciado superior e inferior */
+  padding: 1rem;  /* Padding alrededor del texto */
+  background-color: #090909;  /* Fondo suave y claro */
+  border-radius: 8px;  /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra suave para resaltar */
+  max-width: 600px;  /* Limitar el ancho máximo */
+  margin-left: auto;
+  margin-right: auto;  /* Centrado horizontal */
 }
 
 /* Estilos para el título */
@@ -103,6 +120,10 @@
 
 /* Media queries para dispositivos móviles */
 @media screen and (max-width: 768px) {
+  .main-container-contact {
+    margin-top: 0;
+  }
+
   .contact-form-main-container {
     flex-direction: column;
   }

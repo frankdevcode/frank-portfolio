@@ -1,0 +1,77 @@
+/* Sección tres */
+/* Estilo general de la sección de artículos recientes */
+.recent-articles-section-mobile {
+  padding: 0 10px; /* Padding para dar algo de espacio en pantallas pequeñas */
+}
+
+.title-home-content-blog-mobile {
+  text-align: center;
+  margin-bottom: 30px; /* Reducido para dispositivos móviles */
+  font-size: 2rem; /* Ajustado para pantallas pequeñas */
+  color: #d9d9d9;
+}
+
+.articles-container-mobile {
+  display: grid;
+  grid-template-columns: 1fr; /* En móviles, mostramos una columna */
+  gap: 20px; /* Ajustado el espacio entre tarjetas */
+}
+
+.blog-card-link {
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+  display: block; /* Necesario para que height: 100% funcione */
+}
+
+.blog-card-link:hover {
+  background-color: #141c36;
+}
+
+.article-content-mobile {
+  background-color: #1d2029;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.article-image-mobile {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.article-title-mobile {
+  padding: 15px;
+  margin: 0;
+  font-size: 1.25rem;
+  color: #d9d9d9;
+}
+
+.article-summary-mobile {
+  padding: 0 15px 20px;
+  color: #7d7d7d;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  display: flex;
+  flex-grow: 1;
+  align-items: flex-start;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .title-home-content-blog-mobile {
+    font-size: 1.75rem; /* Ajustado tamaño de fuente para pantallas pequeñas */
+  }
+  
+  .articles-container-mobile {
+    grid-template-columns: 1fr; /* En pantallas pequeñas, mostrar una sola columna */
+    gap: 1rem; /* Reducir el espacio entre las tarjetas */
+  }
+
+  .article-summary-mobile {
+    font-size: 0.85rem; /* Ajuste de tamaño de fuente para móviles */
+  }
+}

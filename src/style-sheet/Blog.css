@@ -4,6 +4,7 @@
   max-width: 1200px; /* Ancho máximo para que no sea demasiado ancho en pantallas grandes */
   margin: 0 auto;
   color: #333; /* Color de texto base oscuro */
+  margin-top: 70px;
 }
 
 /* Migas de pan (breadcrumbs) para la navegación */
@@ -31,13 +32,13 @@
 }
 
 /* Enlace completo que envuelve cada tarjeta para hacerla clicable */
-.blog-card-link {
+.container-block-link-cards {
   text-decoration: none; /* Elimina el subrayado de los enlaces */
   color: inherit; /* Hereda el color del texto */
 }
 
 /* Estilos para cada tarjeta del blog */
-.blog-card {
+.container-blog-card-fk {
   background-color: #f9f9f9; /* Fondo claro para la tarjeta */
   border-radius: 10px; /* Bordes redondeados */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidad */
@@ -47,7 +48,7 @@
 }
 
 /* Efecto de hover para la tarjeta (levanta la tarjeta ligeramente) */
-.blog-card:hover {
+.container-blog-card-fk:hover {
   transform: translateY(-10px); /* La tarjeta se eleva 10px */
 }
 
@@ -161,6 +162,10 @@
 
 /* Responsividad */
 @media (max-width: 768px) {
+  .blog-container {
+    margin-top: 0;
+  }
+
   .blog-grid {
     grid-template-columns: repeat(2, 1fr); /* 2 columnas en tablets */
   }

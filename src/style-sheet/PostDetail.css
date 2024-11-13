@@ -6,6 +6,7 @@
   margin: auto;
   width: 100%; /* Asegúrate de que el contenedor use el 100% del ancho disponible */
   box-sizing: border-box; /* Asegura que el padding no cause desbordamiento */
+  margin-top: 70px;
 }
 
 /* Imagen del post en detalle */
@@ -160,22 +161,63 @@
 }
 
 /* Estilo de los botones de la sección promocional */
+/* Estilos generales para los botones de promoción */
 .promotion-button {
-  display: inline-block;      /* Hace que el botón sea un bloque alineado en línea */
-  background-color: #007bff;  /* Color de fondo azul */
-  color: #fff;                /* Color de texto blanco */
-  padding: 10px 20px;         /* Espaciado interno: 10px arriba/abajo y 20px izquierda/derecha */
-  margin: 10px;               /* Espaciado externo de 10px alrededor del botón */
-  text-decoration: none;      /* Elimina el subrayado del enlace */
-  border-radius: 5px;         /* Bordes redondeados de 5px para los botones */
-  font-size: 16px;            /* Tamaño de fuente mediano para el texto del botón */
-  transition: background-color 0.3s; /* Añade una transición suave para el cambio de color al pasar el ratón */
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin: 10px;
 }
 
-/* Cambia el color de fondo del botón al pasar el ratón */
-.promotion-button:hover {
-  background-color: #0056b3;  /* Color más oscuro para el efecto hover */
+/* Botón de Amazon utilizando data-attribute */
+.promotion-button[data-platform="amazon"] {
+  background-color: #FF9900; /* Color de fondo Amazon */
+  border: 1px solid #FF9900;
 }
+
+.promotion-button[data-platform="amazon"]:hover {
+  background-color: #FFB74D; /* Color más claro al hacer hover */
+}
+
+/* Botón de Hotmart utilizando data-attribute */
+.promotion-button[data-platform="hotmart"] {
+  background-color: #F76901; /* Color de fondo Hotmart */
+  border: 1px solid #F76901;
+}
+
+.promotion-button[data-platform="hotmart"]:hover {
+  background-color: #FF8A33; /* Color más claro al hacer hover */
+}
+
+/* Estilos para la lista de enlaces por país */
+.country-links {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 15px;
+}
+
+.country-links li {
+  margin-bottom: 10px;
+}
+
+.country-links a {
+  font-size: 16px;
+  color: #1DA1F2; /* Color de enlace para que coincida con el azul de Twitter */
+  text-decoration: none;
+  font-weight: normal;
+  transition: color 0.3s ease;
+}
+
+.country-links a:hover {
+  color: #0D47A1; /* Cambia a un azul más oscuro al hacer hover */
+}
+
 
 
 /*--------------------------------------------------------------------------*/
@@ -185,6 +227,7 @@
 @media (max-width: 768px) {
   .post-detail-container {
     padding: 15px; /* Menos padding en móviles */
+    margin-top: 0;
   }
 
   .post-detail-container h1 {

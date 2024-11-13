@@ -1,128 +1,149 @@
-/* Contenedor principal */
+/* Archivo: ProjectFrank.css */
+
+/* Contenedor principal para alinear el contenido y dar un aspecto elegante */
 .project-frank-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+  padding-bottom: 5rem;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
-  max-width: 1200px;  /* Máximo ancho en pantallas grandes */
-  width: 100%;
-  box-sizing: border-box;
+  border-radius: 8px;
+  margin-top: 70px;
 }
 
-/* Banner */
+/* Estilo para el banner de la imagen del proyecto */
 .project-banner {
-  width: 100%;
-  padding: 0; /* Eliminamos rellenos para evitar desplazamiento */
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
 }
 
 .project-frank-image-banner {
   width: 100%;
   height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  transition: transform 0.3s ease;
 }
 
-/* Contenido del proyecto */
+.project-banner:hover .project-frank-image-banner {
+  transform: scale(1.05);
+}
+
+/* Contenedor de contenido con espaciado y alineación */
 .project-content {
-  text-align: center;
-  padding: 0;
-  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: #333;
 }
 
-.project-title {
-  font-size: 2.5rem;
-  color: #f1f1f1;
-  margin-bottom: 20px;
+/* Título del proyecto con estilo profesional */
+.project-title-fkdev {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #d9d9d9;
+  margin: 0;
 }
 
-.project-description {
-  font-size: 1.2rem;
+/* Descripción del proyecto */
+.project-description-frank {
+  font-size: 1rem;
   line-height: 1.6;
-  color: #777;
-  max-width: 900px;
-  margin: 0 auto 40px;
+  color: #979797;
 }
 
-/* Tecnologías */
+/* Contenedor de las tecnologías utilizadas */
 .technologies {
-  margin-top: 40px;
+  margin-top: 1rem;
 }
 
 .technologies h3 {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-  color: #f1f1f1;
+  font-size: 1.5rem;
+  color: #d9d9d9;
+  margin-bottom: 1.5rem;
 }
 
+/* Grid para organizar las tecnologías en filas y columnas */
 .technology-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  max-width: 100%;
-  width: 100%;
-  box-sizing: border-box;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
 }
 
+/* Elementos de cada tecnología */
 .technology-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(180deg, #3e250086, #181818); /* Degradado */
-  padding: 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
-  border-radius: 10px;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #202020;
 }
 
-/* Animación de desplazamiento hacia arriba al pasar el cursor */
-.technology-item:hover {
-  transform: translateY(-10px); /* Desplazamiento hacia arriba */
-  box-shadow: 0 8px 12px rgba(118, 118, 118, 0.2); /* Sombra más pronunciada */
-}
-
+/* Iconos de tecnología con colores vibrantes */
 .technology-icon {
-  font-size: 3rem;
-  color: #ffffff;
-  margin-bottom: 10px;
+  font-size: 2.5rem;
+  color: #707084;
+  margin-bottom: 0.5rem;
 }
 
 .technology-item p {
+  font-size: 0.9rem;
+  color: #979797;
+}
+
+/* Estilo para el botón de GitHub */
+.project-github-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  margin-top: 2rem;
   font-size: 1rem;
-  color: #777;
+  color: #ffffff;
+  background-color: #0A84FF;
   text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  max-width: 200px; /* Establece un ancho máximo fijo */
+  width: auto; /* Asegura que el ancho se ajuste al contenido */
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* Adaptación para pantallas pequeñas */
-@media (max-width: 1024px) {
-  .technology-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas medianas */
-  }
-
-  .project-title {
-    font-size: 2rem;
-  }
-
-  .project-description {
-    font-size: 1.1rem;
-  }
+.project-github-button:hover {
+  background-color: #3097ff;
 }
 
+
+/* Responsividad para pantallas más pequeñas */
 @media (max-width: 768px) {
-  .technology-grid {
-    grid-template-columns: 1fr; /* 1 columna en pantallas pequeñas */
-  }
-
-  .technology-item p {
-    font-size: 0.9rem;
+  .project-frank-container {
+    margin-top: 0;
   }
 
   .project-title {
-    font-size: 1.8rem;
+    font-size: 1.75rem;
   }
 
   .project-description {
-    font-size: 1rem;
+    font-size: 0.95rem;
+  }
+
+  .technologies h3 {
+    font-size: 1.25rem;
+  }
+
+  .technology-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .project-github-button {
+    font-size: 0.9rem;
+    padding: 0.65rem 1.25rem;
+    max-width: 150px; /* Ajusta el ancho en dispositivos más pequeños */
   }
 }
 
@@ -131,11 +152,8 @@
     font-size: 1.5rem;
   }
 
-  .project-description {
-    font-size: 0.9rem;
+  .technology-grid {
+    grid-template-columns: 1fr;
   }
 
-  .technology-icon {
-    font-size: 2.5rem;
-  }
 }

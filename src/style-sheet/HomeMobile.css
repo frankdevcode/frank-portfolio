@@ -1,0 +1,14 @@
+/* MainContentMobile.css */
+.main-content-mobile {
+  padding: 10px;  /* Agrega un pequeño padding para que los elementos no toquen los bordes de la pantalla */
+  display: flex;
+  flex-direction: column;  /* Asegura que los subcomponentes estén en columna */
+  gap: 20px;  /* Espacio entre los subcomponentes */
+}
+
+/* Asegúrate de que los subcomponentes tengan un comportamiento adecuado en pantallas pequeñas */
+@media (max-width: 768px) {
+  .main-content-mobile {
+    padding: 0;  /* Ajusta el padding si es necesario para mayor espacio en pantallas más pequeñas */
+  }
+}

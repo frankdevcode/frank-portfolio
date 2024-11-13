@@ -1,66 +1,98 @@
-// src/Header.js
-import React, { useState } from 'react';
-import '../style-sheet/Header.css'; // Importamos el archivo CSS del componente Header
-import logoFranciscoPerlaza from '../imagenes/logo-francisco-perlaza.png'; // Importamos el logo y mostramos el atributo <img>
-
-// Importamos los links
+import React, { useState, useEffect, useCallback } from 'react';
 import { Link } from 'react-router-dom';
-
-// Elementos de la barra de búsqueda
+import { IoCloseOutline } from 'react-icons/io5';
+import logoFranciscoPerlaza from '../imagenes/logo-francisco-perlaza.png';
 import SearchBar from '../componentes/SearchBar';
+import '../style-sheet/Header.css';
 
 const Header = () => {
-  const [searchTerm, setSearchTerm] = useState('');  
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
 
-  const handleSearch = (searchTerm) => {
-    setSearchTerm(searchTerm);
-  };
+  // Detecta el cambio de tamaño de pantalla
+  const handleResize = useCallback(() => {
+    setIsMobile(window.innerWidth <= 768);
+  }, []);
+
+  // Detecta el scroll para cambiar el estilo del header
+  const handleScroll = useCallback(() => {
+    setIsScrolled(window.scrollY > 50);
+  }, []);
+
+  // Alterna el sidebar en modo móvil
+  const toggleSidebar = useCallback(() => {
+    setSidebarOpen(prevState => !prevState);
+  }, []);
+
+  useEffect(() => {
+    window.addEventListener('resize', handleResize);
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [handleResize, handleScroll]);
 
   return (
-    <div className='main-container-of-header-number-one'>
-      <div className='child-container-number-two'>
-        {/* Contenedor para el menu de navegacion (header) */}
-        <header className='container-three-menu-navigation'>
-          <nav className='flex-container'>
-            <div className='logo-container'>
-              <Link to='/' className='LogoLink'>
-                <img src={logoFranciscoPerlaza} alt='Logo Francisco Perlaza' className='Logo' />
-              </Link>
-            </div>
-            <div className='menu-navigation-container'>
-              <Link to='/novedades'>Novedades</Link>
-              <Link to='/sobre-francisco'>Sobre Francisco</Link>
-              <Link to='/proyectos'>Proyectos</Link>
-              {/* <Link to='/portafolio'>Portafolio</Link> */}
-              <Link to='/blog'>Blog</Link>
-              <Link to='/contacto'>Contacto</Link>
-              <Link to='/ayuda'>Ayuda</Link>
-              {/* Agregar mas elementos al encabezado segun sea necesario */}
+    <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
+      <div className="menu-container">
+        {isMobile ? (
+          <div className="menu-toggle-container">
+            <button className="menu-toggle" onClick={toggleSidebar} aria-label="Abrir menú">
+              <span className="bar"></span>
+              <span className="bar"></span>
+              <span className="bar"></span>
+            </button>
+            <Link to="/" className="logo-link">
+              <img src={logoFranciscoPerlaza} alt="Logo Francisco Perlaza" className="logo" />
+            </Link>
+          </div>
+        ) : (
+          <nav className="flex-container" role="navigation">
+            <Link to="/" className="logo-link">
+              <img src={logoFranciscoPerlaza} alt="Logo Francisco Perlaza" className="logo" />
+            </Link>
+            <div className="menu-navigation-container">
+              <Link to="/perfil-profesional">Perfil Profesional</Link>
+              <Link to="/sobre-francisco">Sobre Francisco</Link>
+              <Link to="/proyectos">Proyectos</Link>
+              <Link to="/blog">Blog</Link>
+              <Link to="/contacto">Contacto</Link>
+              <Link to="/ayuda">Ayuda</Link>
             </div>
           </nav>
-        </header>
-
-        {/* Contenedor para la informacion del giro banner */}
-        <div className='container-header-number-three-twist-banner'>
-          <div className='container-child-info-banner'>
-            <h1 className='title-one-twist-banner'>Construyamos puentes entre sueños y realidad</h1>
-            {/*<h2 className='title-two-twist-banner'>sueños y realidad</h2>*/}
-            <h2 className='paragraph-one-twist-banner'>Soy Francisco Perlaza</h2>
-          </div>
-
-          {/* Contenedor para el nombre */}
-          <div className='container-engineer-fp-twist-banner'>
-            <p className='text-engineer-fp-twist-banner'>Ing. Sistemas</p>
-            {/* Contenedor para la barra de búsqueda */}
-            <div>
-              <SearchBar onSearch={handleSearch} />
-            </div>
-          </div>
-        </div>
+        )}
       </div>
-    </div>
-  );
-}
 
+      {isMobile && (
+        <>
+          <Sidebar isOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
+        </>
+      )}
+    </header>
+  );
+};
+
+const Sidebar = ({ isOpen, toggleSidebar }) => (
+  <div className={`sidebar ${isOpen ? 'active' : ''}`} aria-hidden={!isOpen}>
+    <div className="sidebar-header">
+      <span className="sidebar-greeting">¡Hola!</span>
+      <IoCloseOutline className="close-icon" onClick={toggleSidebar} aria-label="Cerrar menú" />
+    </div>
+    <nav className="sidebar-nav" role="navigation">
+      <ul>
+        {['Perfil Profesional', 'Proyectos', 'Blog', 'Contacto', 'Ayuda'].map((item, index) => (
+          <li key={index}>
+            <Link to={`/${item.toLowerCase().replace(' ', '-')}`} onClick={toggleSidebar}>
+              {item}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  </div>
+);
 
 export default Header;

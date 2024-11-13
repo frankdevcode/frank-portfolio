@@ -1,0 +1,195 @@
+/* Estilos para el banner degradado con temática tecnológica */
+.main-container-of-header-number-one {
+  margin-top: 30px;
+  background: linear-gradient(180deg, #2b5876, #2a2a72, #151515); /* Fondo degradado oscuro con tonos azulados */
+  padding: 60px 20px; /* Espaciado amplio alrededor del banner */
+  position: relative; /* Para permitir el posicionamiento de elementos decorativos */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Contenedor titulo giro banner */
+.container-child-info-banner {
+  max-width: 800px;
+}
+
+/* Estilos para el texto principal */
+.title-one-twist-banner {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #f8f8f8;
+  margin-bottom: 20px;
+  animation: fadeInUp 1.5s ease-out; /* Animación de entrada para el texto */
+}
+
+/* Animación de entrada suave para el texto */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Estilos para el subtítulo */
+.paragraph-one-twist-banner {
+  font-size: 2.5rem;
+  color: #00aeff;
+  font-weight: 300;
+  animation: fadeInUp 2s ease-out; /* Suave entrada para el subtítulo */
+}
+
+/* PARTICULAS ANIMADAS */
+/* Contenedor principal de partículas */
+.main-container-of-header-number-one {
+  position: relative;
+}
+
+/* Estilo base para cada estrella */
+.particle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  background-color: rgba(10, 132, 255, 0.775);
+  opacity: 0.8;
+  animation: moveStar 30s ease-in-out infinite alternate, twinkle 4s infinite ease-in-out alternate; /* Aumento la duración de la animación */
+}
+
+/* Estrellas pequeñas */
+.particle.small {
+  width: 8px;
+  height: 8px;
+}
+
+/* Estrellas grandes */
+.particle.large {
+  width: 15px;
+  height: 15px;
+}
+
+/* Movimiento suave y aleatorio en ambas direcciones */
+@keyframes moveStar {
+  0% { transform: translate(0, 0); }
+  20% { transform: translate(-10px, -10px); }
+  40% { transform: translate(15px, -15px); }
+  60% { transform: translate(-5px, 15px); }
+  80% { transform: translate(3px, 10px); }
+  100% { transform: translate(0, -5px); }
+}
+
+/* Animación de parpadeo */
+@keyframes twinkle {
+  50% { opacity: 0.6; transform: scale(1); }
+  100% { opacity: 1; transform: scale(1.3); }
+}
+
+/* Posiciones iniciales de las estrellas */
+.particle:nth-child(1) { top: 50%; left: 50%; animation-delay: 0s; }
+.particle:nth-child(2) { top: 50%; left: 70%; animation-delay: 1s; }
+.particle:nth-child(3) { top: 8%; left: 14%; animation-delay: 2s; }
+.particle:nth-child(4) { top: 50%; left: 30%; animation-delay: 3s; }
+
+/* Alternar entre partículas pequeñas y grandes */
+.particle:nth-child(odd) {
+  /* Estrellas grandes */
+  width: 15px;
+  height: 15px;
+}
+
+.particle:nth-child(even) {
+  /* Estrellas pequeñas */
+  width: 8px;
+  height: 8px;
+}
+
+
+/* --------------------------------------------------//---------------------------------------------------- */
+
+
+
+/* Contendor de la informacion del giro banner */
+.container-header-number-three-twist-banner {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contenedor para el nombre */
+.container-engineer-fp-twist-banner {
+  padding: 0;
+}
+
+/* Ingeniero FP */
+.text-engineer-fp-twist-banner {
+  font-size: 14px;
+  color: #949494;
+  text-align: center;
+}
+
+
+
+
+/* Estilos para dispositivos móviles */
+/* Ocultar el menú de dispositivos móviles por defecto */
+.header-mobile {
+  display: none;
+}
+
+.main-container-content-home-mobile {
+  display: none;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+  .main-container-of-header-number-one {
+    margin: 0;
+  }
+
+
+  .main-container-content-home {
+    display: none; /* Ocultando el contenido Main del ordenador */
+  }
+
+  .header-mobile {
+    display: block; /* Mostrando el header para movil */
+  }
+
+  .main-container-content-home-mobile {
+    display: block; /* Mostrando contenenido del main para movil */
+  }
+
+  /* Estilos del banner de bienvenida en móvil */
+  .main-container-twist-banner-mobile {
+    background: linear-gradient(180deg, #2b5876, #2a2a72, #151515); /* Fondo degradado oscuro con tonos azulados */
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+
+
+  .title-twist-banner-mobile {
+    font-size: var(--font-size-title);
+    color: #f1f1f1;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+  }
+
+  .title-two-twist-banner-mobile {
+    font-size: var(--font-size-default);
+    color: #0A84FF;
+    font-weight: 600;
+    margin-bottom: 0.7rem;
+  }
+
+  .text-engineer-fp-twist-banner-mobile {
+    font-size: var(--font-size-small);
+    color: #949494;
+  }
+}

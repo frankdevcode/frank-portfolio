@@ -63,7 +63,7 @@ const ApiProject = () => {
       </div>
 
       <div className='project-footer'>
-        <button className='cta-button'>Explora el proyecto</button>
+        {/* <button className='cta-button'>Explora el proyecto</button>*/}
       </div>
     </div>
   );

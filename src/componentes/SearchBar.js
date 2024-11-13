@@ -9,15 +9,19 @@ const SearchBar = () => {
   const [showResults, setShowResults] = useState(false);
   const navigate = useNavigate();
 
-  // // Lista de posts resultados de sugerencias de la barra de busqueda
+  // Lista de posts resultados de sugerencias de la barra de busqueda
   const [posts, setPosts] = useState([
+    // Proyectos
     { title: 'Diseño y desarrollo del sitio web profesional Frank', path: '/frank' },
     { title: 'Desarrollo de una plataforma de comercio electrónico', path: '/ecommerce' },
     { title: 'Creación de una API potente y versátil para el comercio electrónico', path: '/api' },
-    { title: 'El rey de la simplicidad y la Inteligencia Artificial', path: '/post/1' },
-    { title: 'La columna vertebral del desarrollo web', path: '/post/2' },
-    { title: 'La batalla por el futuro de la programación', path: '/post/3' },
-  ]);
+  
+    // Post Blog (Actualizar las rutas)
+    { title: 'El rey de la simplicidad y la Inteligencia Artificial', path: '/blog/python' },
+    { title: 'La columna vertebral del desarrollo web', path: '/blog/javascript' },
+    { title: 'La batalla por el futuro de la programación', path: '/blog/rust-go' },
+    { title: 'Introducción a Git y GitHub', path: '/blog/git-github' },
+  ]);  
 
   const filteredPosts = posts.filter((post) =>
     post.title.toLowerCase().includes(searchTerm.toLowerCase())

@@ -1,17 +1,15 @@
-import React, { useState, useEffect } from 'react';
+// Blog.js
+import React, { useState, useEffect, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import '../style-sheet/Blog.css';
 import authorImage from '../imagenes/bibliografia/frank-dev.jpg';
-import blogPosts from '../componentes/BlogPostData';
+import blogPosts from '../data/BlogPostData';
 
+// Función para calcular el tiempo de lectura de una publicación
 const calculateReadTime = (content) => {
   const wordsPerMinute = 200;
-
   const totalWords = content.reduce((total, block) => {
-    if (block.type === 'p') {
-      return total + block.text.split(/\s+/).length;
-    }
-    return total;
+    return block.type === 'p' ? total + block.text.split(/\s+/).length : total;
   }, 0);
 
   const minutes = Math.ceil(totalWords / wordsPerMinute);
@@ -19,42 +17,39 @@ const calculateReadTime = (content) => {
 };
 
 const Blog = () => {
-  const postsPerPage = 9; // Mostrar 9 tarjetas por página
+  const postsPerPage = 9;
   const [posts, setPosts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
 
   useEffect(() => {
-    if (Array.isArray(blogPosts)) {
-      const updatedPosts = blogPosts.map(post => ({
-        ...post,
-        readTime: calculateReadTime(post.content)
-      }));
-      setPosts(updatedPosts);
-    } else {
-      console.error('BlogPostData no es un array.');
-    }
-  }, []);
+    const updatedPosts = Array.isArray(blogPosts)
+      ? blogPosts.map(post => ({
+          ...post,
+          readTime: calculateReadTime(post.content)
+        }))
+      : [];
+    setPosts(updatedPosts);
+  }, [blogPosts]);
 
-  // Limitar el número de caracteres en el título
-  const truncateTitle = (title) => {
-    return title.length > 53 ? title.substring(0, 53) + '...' : title;
-  };
+  const totalPages = useMemo(() => Math.ceil(posts.length / postsPerPage), [posts]);
 
-  const renderPosts = posts
-    .slice((currentPage - 1) * postsPerPage, currentPage * postsPerPage)
-    .map(post => {
+  // Limita el número de caracteres en el título para evitar desbordamientos
+  const truncateTitle = (title) => title.length > 53 ? title.substring(0, 53) + '...' : title;
+
+  const renderPosts = useMemo(() => (
+    posts.slice((currentPage - 1) * postsPerPage, currentPage * postsPerPage).map(post => {
       const summary = post.content
-        .filter(block => block.type === 'p') // Solo incluimos los párrafos
-        .map(block => block.text) // Tomamos solo el texto de los párrafos
-        .join(' ') // Los unimos en una cadena de texto
-        .substring(0, 100); // Limitamos el resumen a 100 caracteres
+        .filter(block => block.type === 'p')
+        .map(block => block.text)
+        .join(' ')
+        .substring(0, 100);
 
       return (
-        <Link to={`/post/${post.id}`} key={post.id} className="blog-card-link">
-          <div className="blog-card">
+        <Link to={`/blog/${post.shortSlug}`} key={post.id} className="container-block-link-cards">
+          <div className="container-blog-card-fk">
             <img src={post.image} alt={post.title} className="blog-image" />
-            <h2>{truncateTitle(post.title)}</h2> {/* Limitar los caracteres del título */}
-            <p>{summary}...</p> {/* Muestra solo el resumen del contenido */}
+            <h2>{truncateTitle(post.title)}</h2>
+            <p>{summary}...</p>
             <div className="blog-author-info">
               <img src={authorImage} alt="Francisco Perlaza" className="author-avatar" />
               <div className="author-details">
@@ -71,20 +66,15 @@ const Blog = () => {
           </div>
         </Link>
       );
-    });
-
-  const totalPages = Math.ceil(posts.length / postsPerPage);
+    })
+  ), [posts, currentPage]);
 
   const handlePreviousPage = () => {
-    if (currentPage > 1) {
-      setCurrentPage(currentPage - 1);
-    }
+    if (currentPage > 1) setCurrentPage(currentPage - 1);
   };
 
   const handleNextPage = () => {
-    if (currentPage < totalPages) {
-      setCurrentPage(currentPage + 1);
-    }
+    if (currentPage < totalPages) setCurrentPage(currentPage + 1);
   };
 
   return (
@@ -96,11 +86,11 @@ const Blog = () => {
       <div className="blog-grid">{renderPosts}</div>
 
       <div className="pagination-container">
-        <button onClick={handlePreviousPage} disabled={currentPage === 1}>
+        <button onClick={handlePreviousPage} disabled={currentPage === 1} aria-label="Página anterior">
           Anterior
         </button>
         <span>Página {currentPage} de {totalPages}</span>
-        <button onClick={handleNextPage} disabled={currentPage === totalPages}>
+        <button onClick={handleNextPage} disabled={currentPage === totalPages} aria-label="Página siguiente">
           Siguiente
         </button>
       </div>

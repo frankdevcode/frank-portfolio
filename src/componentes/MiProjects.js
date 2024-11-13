@@ -31,29 +31,13 @@ export default function MiProjects() {
       technologies: ["Node.js", "MongoDB", "Express.js"],
       route: "/api", // Ruta interna para React Router
       image: tarjetaImagenProyectoApiEcommerce
-    },
-    {
-      id: 4,
-      title: "Dashboard de Análisis de Datos",
-      description: "Dashboard interactivo para visualización y análisis de grandes conjuntos de datos.",
-      technologies: ["Vue.js", "D3.js", "Python"],
-      route: "/projects/data-analysis-dashboard", // Ruta interna para React Router
-      image: "/placeholder.svg?height=200&width=300"
-    },
-    {
-      id: 5,
-      title: "Sistema de Gestión de Inventario",
-      description: "Aplicación web para gestionar inventarios de pequeñas y medianas empresas.",
-      technologies: ["React", "Node.js", "MongoDB"],
-      route: "/projects/inventory-management", // Ruta interna para React Router
-      image: "/placeholder.svg?height=200&width=300"
     }
+    
   ]);
 
   return (
     <div className='main-container-portfolio-frank'>
       <div className="portfolio-container">
-        <h2 className="portfolio-title">Mis Proyectos</h2>
         <div className="projects-grid">
           {projects.map((project) => (
             <div key={project.id} className="project-card">
@@ -84,7 +68,15 @@ export default function MiProjects() {
         <p className='frank-description'>
           Estos proyectos fueron desarrollados utilizando tecnologías avanzadas para garantizar escalabilidad, eficiencia y una experiencia de usuario óptima.
         </p>
-        <button className='frank-community-button'>Únete a la Comunidad Developer</button>
+        
+        <a
+          href="https://discord.gg/j89QRebV"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="frank-community-button"
+        >
+          Únete a la Comunidad Developer
+        </a>
       </div>
     </div>
   );

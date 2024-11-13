@@ -15,8 +15,8 @@ const ProjectFrank = () => {
       </div>
 
       <div className="project-content">
-        <h2 className="project-title">Diseño y desarrollo del sitio web profesional Frank</h2>
-        <p className="project-description">
+        <h2 className="project-title-fkdev">Diseño y desarrollo del sitio web profesional Frank</h2>
+        <p className="project-description-frank">
           Este proyecto es la creación de un portafolio personal para mostrar mis habilidades como ingeniero de sistemas. El sitio fue desarrollado usando React para el frontend, GitHub Pages para el despliegue y CSS para la estilización. Es completamente responsivo y refleja un diseño moderno y minimalista, enfocado en la experiencia del usuario.
         </p>
 
@@ -42,6 +42,15 @@ const ProjectFrank = () => {
           </div>
         </div>
       </div>
+
+      <a
+        href="https://github.com/frankdevcode/frank-portfolio"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="project-github-button"
+      >
+        Ver en GitHub
+      </a>
     </div>
   );
 };
