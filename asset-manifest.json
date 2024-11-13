@@ -1,28 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.db1991f6.css",
-    "main.js": "/static/js/main.6b633787.js",
-    "static/media/sitio-web-frank.jpg": "/static/media/sitio-web-frank.fa584e3646e9ad0d726b.jpg",
+    "main.css": "/static/css/main.ad94ee2f.css",
+    "main.js": "/static/js/main.b255cd21.js",
+    "static/media/sitio-web-frank.jpg": "/static/media/sitio-web-frank.8b0b97bdc4ce0482adde.jpg",
     "static/media/rush-go-portada-blog.jpg": "/static/media/rush-go-portada-blog.f3887c7d24662be3f0cb.jpg",
     "static/media/git-github-portada-blog.jpg": "/static/media/git-github-portada-blog.67ca35ffca0a9389ba0a.jpg",
     "static/media/python-portada-blog.jpg": "/static/media/python-portada-blog.5296bb02ad32b531ad48.jpg",
     "static/media/javascript-portada-blog.jpg": "/static/media/javascript-portada-blog.34144cb1e9eaf47cfeba.jpg",
-    "static/media/logo-francisco-perlaza.png": "/static/media/logo-francisco-perlaza.9c7bb3e5cb10f926920f.png",
     "static/media/frank-dev.jpg": "/static/media/frank-dev.c8674255c572974d2101.jpg",
     "static/media/tarjeta-imagen-proyecto-plataforma-empresarial.jpg": "/static/media/tarjeta-imagen-proyecto-plataforma-empresarial.933db6ef15daf2b8054e.jpg",
     "static/media/tarjeta-imagen-proyecto-api-ecommerce.jpg": "/static/media/tarjeta-imagen-proyecto-api-ecommerce.7e92e22c0b49e91c0e8b.jpg",
+    "static/media/placeholder-avatar.png": "/static/media/placeholder-avatar.2960f15b0e187d382a73.png",
     "static/media/imagen-logo-remigton.jpg": "/static/media/imagen-logo-remigton.270fd9a85a2eae5ec34a.jpg",
     "static/media/tarjeta-imagen-proyecto-frank.jpg": "/static/media/tarjeta-imagen-proyecto-frank.65e26f9dbb41b1190a13.jpg",
     "static/media/imagen-logo-cisco.jpg": "/static/media/imagen-logo-cisco.4aade5e6c885b66631ed.jpg",
     "static/media/imagen-logo-sena.jpg": "/static/media/imagen-logo-sena.2b8bae551663c35616dc.jpg",
     "static/media/imagen-logo-platzi.jpg": "/static/media/imagen-logo-platzi.26ab9702b75495f1ddae.jpg",
     "static/media/imagen-logo-edteam.jpg": "/static/media/imagen-logo-edteam.2905d46f788f6752f34b.jpg",
+    "static/media/logo-francisco-perlaza.png": "/static/media/logo-francisco-perlaza.02b3a1d7c4608117178d.png",
     "index.html": "/index.html",
-    "main.db1991f6.css.map": "/static/css/main.db1991f6.css.map",
-    "main.6b633787.js.map": "/static/js/main.6b633787.js.map"
+    "main.ad94ee2f.css.map": "/static/css/main.ad94ee2f.css.map",
+    "main.b255cd21.js.map": "/static/js/main.b255cd21.js.map"
   },
   "entrypoints": [
-    "static/css/main.db1991f6.css",
-    "static/js/main.6b633787.js"
+    "static/css/main.ad94ee2f.css",
+    "static/js/main.b255cd21.js"
   ]
 }
