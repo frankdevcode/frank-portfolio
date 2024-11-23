@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ad94ee2f.css",
-    "main.js": "/static/js/main.b255cd21.js",
+    "main.js": "/static/js/main.8bdac3ca.js",
     "static/media/sitio-web-frank.jpg": "/static/media/sitio-web-frank.8b0b97bdc4ce0482adde.jpg",
     "static/media/rush-go-portada-blog.jpg": "/static/media/rush-go-portada-blog.f3887c7d24662be3f0cb.jpg",
     "static/media/git-github-portada-blog.jpg": "/static/media/git-github-portada-blog.67ca35ffca0a9389ba0a.jpg",
@@ -20,10 +20,10 @@
     "static/media/logo-francisco-perlaza.png": "/static/media/logo-francisco-perlaza.02b3a1d7c4608117178d.png",
     "index.html": "/index.html",
     "main.ad94ee2f.css.map": "/static/css/main.ad94ee2f.css.map",
-    "main.b255cd21.js.map": "/static/js/main.b255cd21.js.map"
+    "main.8bdac3ca.js.map": "/static/js/main.8bdac3ca.js.map"
   },
   "entrypoints": [
     "static/css/main.ad94ee2f.css",
-    "static/js/main.b255cd21.js"
+    "static/js/main.8bdac3ca.js"
   ]
 }
