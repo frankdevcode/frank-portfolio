@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import '../style-sheet/Home.css';
 import { Link } from 'react-router-dom';
 import blogPosts from '../data/BlogPostData';
+import YouTubeSection from './YouTubeSection';
 
 // Importamos los iconos de React
 import { AiOutlineRight } from "react-icons/ai";
@@ -122,6 +123,11 @@ const Home = () => {
           </Link>
         </div>
       </div>
+
+      {/* Sección de videos de YouTube */}
+      <section className="home-youtube-section">
+        <YouTubeSection />
+      </section>
 
       {/* Secion 2 */}
       <div className='container-two-title-home'>

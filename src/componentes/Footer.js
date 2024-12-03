@@ -9,8 +9,9 @@ import { AiFillLinkedin } from 'react-icons/ai';
 import { AiFillGithub } from 'react-icons/ai';
 import { AiFillFacebook } from 'react-icons/ai';
 import { AiOutlineInstagram } from 'react-icons/ai';
-import { AiOutlineWhatsApp } from 'react-icons/ai';
-import { AiOutlineTwitter } from 'react-icons/ai';
+// import { AiOutlineWhatsApp } from 'react-icons/ai'; //
+import { RiTwitterXLine } from "react-icons/ri";
+import { RiTiktokFill } from "react-icons/ri";
 
 // Importamos los links
 import { Link } from 'react-router-dom';
@@ -19,8 +20,8 @@ function Footer() {
   const currentYear = new Date().getFullYear(); // Obtener el año dinamicamente. Ej: 2024
 
   // Obtener numero de telefono de WhatsApp
-  const codigoDePais = '+57'; // Codigo de pais
-  const numeroDeTelefono = ''; // Numero de telefono
+  // const codigoDePais = '+57'; // Codigo de pais
+  // const numeroDeTelefono = ''; // Numero de telefono
 
   return (
     <footer>
@@ -71,20 +72,27 @@ function Footer() {
                 </a>
               </div>
               <div className='container-columns-icons'>
-                <a href='https://www.instagram.com/frankdevcode/' target='_blank' rel='noopener noreferrer' className='social-media-icons-link' aria-label='Instagram'>
+                <a href='https://www.instagram.com/franciscoperlazza/' target='_blank' rel='noopener noreferrer' className='social-media-icons-link' aria-label='Instagram'>
                   <AiOutlineInstagram className="social-icons-components" />
                 </a>
               </div>
               <div className='container-columns-icons'>
                 <a href='https://x.com/franklaza' target='_blank' rel='noopener noreferrer' className='social-media-icons-link' aria-label='Twitter'>
-                  <AiOutlineTwitter className='social-icons-components' />
+                  <RiTwitterXLine className='social-icons-components' />
                 </a>
               </div>
+              <div className='container-columns-icons'>
+                <a href='https://www.tiktok.com/@franciscoperlazza' target='_blank' rel='noopener noreferrer' className='social-media-icons-link' aria-label='Twitter'>
+                  <RiTiktokFill className='social-icons-components' />
+                </a>
+              </div>
+              {/*
               <div className='container-columns-icons'>
                 <a href={`https://wa.me/${codigoDePais}${numeroDeTelefono}`} target='_blank' rel='noopener noreferrer' className='social-media-icons-link' aria-label='WhatsApp'>
                   <AiOutlineWhatsApp className='social-icons-components' />
                 </a>
               </div>
+              */}
             </div>
           </div>
         </nav>

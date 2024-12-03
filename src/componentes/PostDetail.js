@@ -143,7 +143,7 @@ const PostDetail = () => {
       </div>
 
       <div className="post-detail-twitter-invite">
-        <p>¿Ideas o sugerencias? Compártelas en <a href="https://x.com/frankpzza" target="_blank" rel="noopener noreferrer">Twitter.</a></p>
+        <p>¿Ideas o sugerencias? Compártelas en <a href="https://x.com/franklaza" target="_blank" rel="noopener noreferrer">Twitter (X).</a></p>
       </div>
 
       <Link to="/blog" className="post-detail-back-link">← Volver al blog</Link>

@@ -56,7 +56,7 @@ const Header = () => {
             </Link>
             <div className="menu-navigation-container">
               <Link to="/perfil-profesional">Perfil Profesional</Link>
-              <Link to="/sobre-francisco">Sobre Francisco</Link>
+              <Link to="/sobre-francisco">Sobre Mi</Link>
               <Link to="/proyectos">Proyectos</Link>
               <Link to="/blog">Blog</Link>
               <Link to="/contacto">Contacto</Link>

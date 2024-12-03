@@ -15,7 +15,7 @@ function AboutFrancisco() {
         <h3 className='title-about'>Perfil profesional</h3>
       </div>
       <div className='about-paragraph-container'>
-        <p className='about-paragraph'>Soy Frank, un ingeniero de sistemas con una sólida formación académica y un historial probado en [menciona áreas específicas, como desarrollo de software, administración de sistemas, etc.]. Mi experiencia se ha forjado en entornos diversos y desafiantes, y estoy listo para aplicar mi conocimiento técnico y habilidades de resolución de problemas en un nuevo y apasionante desafío profesional.</p>
+        <p className='about-paragraph'>Soy Frank, un ingeniero de sistemas con una sólida formación académica y un historial probado en desarrollo de software full-stack, gestión de bases de datos y optimización de aplicaciones web. Mi experiencia se ha forjado en entornos diversos y desafiantes, donde he trabajado con tecnologías como JavaScript, React, Python, HTML/CSS, Git/GitHub y MySQL. A lo largo de mi carrera, he tenido la oportunidad de desarrollar aplicaciones interactivas y escalables, así como de optimizar el rendimiento y la usabilidad de plataformas web.</p>
       </div>
 
       <div className='container-title-about'>
@@ -23,11 +23,7 @@ function AboutFrancisco() {
       </div>
       <div className='about-paragraph-container'>
         <p className='about-paragraph'>
-        <span className='bullet-point'>•</span> Lideré el desarrollo exitoso de [proyecto destacado] que resultó en un aumento del [porcentaje] en la eficiencia operativa.
-        </p>
-
-        <p className='about-paragraph'>
-        <span className='bullet-point'>•</span> Implementé estrategias de seguridad informática que redujeron las vulnerabilidades del sistema en un [porcentaje] en [nombre de la empresa anterior].
+        <span className='bullet-point'>•</span> Lideré el desarrollo exitoso de una plataforma de comercio electrónico que resultó en un aumento del 20%. en la eficiencia operativa.
         </p>
 
         <p className='about-paragraph'>
@@ -40,27 +36,6 @@ function AboutFrancisco() {
       </div>
       <div className='about-paragraph-container'>
         <p className='about-paragraph'>Mi filosofía de trabajo se centra en la eficiencia y la innovación. Creo en la creación de soluciones que no solo resuelven problemas inmediatos, sino que también establecen bases sólidas para el futuro. La agilidad y la adaptabilidad son mis principales activos, y estoy comprometido a mantenerme actualizado con las últimas tendencias y tecnologías.</p>
-      </div>
-
-      <div className='container-title-about'>
-        <h3 className='title-about'>Habilidades clave</h3>
-      </div>
-      <div className='about-paragraph-container'>
-        <p className='about-paragraph'>
-        <span className='bullet-point'>•</span> Desarrollo de software: [Lenguajes y tecnologías relevantes].
-        </p>
-
-        <p className='about-paragraph'>
-        <span className='bullet-point'>•</span> Administración de sistemas y redes.
-        </p>
-
-        <p className='about-paragraph'>
-        <span className='bullet-point'>•</span> Consultoría en seguridad informática.
-        </p>
-
-        <p className='about-paragraph'>
-        <span className='bullet-point'>•</span> Diseño e implementación de arquitecturas tecnológicas.
-        </p>
       </div>
 
       <div className='container-title-about'>
@@ -77,13 +52,6 @@ function AboutFrancisco() {
         <p className='about-paragraph'>Estoy abierto a nuevas oportunidades y emocionado por explorar cómo puedo aportar a tu equipo. Puedes contactarme a través de la sesión de contacto, y estaré encantado de discutir cómo mi experiencia y habilidades pueden complementar y elevar la misión de tu organización.</p>
 
         <p className='about-paragraph'>Gracias por considerar mi perfil. Estoy ansioso por unirme a un equipo que comparta mi compromiso con la excelencia tecnológica y la innovación.</p>
-      </div>
-
-      <div className='container-title-about'>
-        <h3 className='title-about'></h3>
-      </div>
-      <div className='about-paragraph-container'>
-        <p className='about-paragraph'></p>
       </div>
     </div>      
   );
