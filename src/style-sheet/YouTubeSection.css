@@ -1,7 +1,6 @@
 /* Estilos generales para la sección de YouTube */
 .youtube-section {
-  padding: 3rem 1.5rem;
-  background-color: #f9f9f9; /* Fondo claro y elegante */
+  padding: 4rem 0 2rem;
 }
 
 .youtube-section-title {
@@ -9,7 +8,7 @@
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 2rem;
-  color: #333; /* Color moderno para el texto */
+  color: #d9d9d9; /* Color moderno para el texto */
 }
 
 /* Contenedor de videos */
@@ -25,11 +24,10 @@
   flex-direction: row;
   align-items: flex-start;
   gap: 1.5rem;
-  background: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  background-color: #1e1e1e; /* Fondo oscuro cálido */
   overflow: hidden;
   padding: 1rem;
+  border: 1px solid #333333; /* Borde sutil */
 }
 
 /* Miniatura del video */
@@ -41,7 +39,7 @@
   width: 100%;            /* Asegura que el iframe llene completamente su contenedor */
   height: calc(50vh - 20px); /* Mantiene la altura adecuada */
   border-radius: 8px;      /* Esquinas redondeadas */
-  border: 2px solid #ddd;  /* Borde para un diseño limpio */
+  border: 1px solid #333333; /* Borde sutil */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
@@ -52,15 +50,15 @@
 }
 
 .youtube-video-title {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
-  color: #1a73e8; /* Azul elegante */
+  color: #d9d9d9; /* Azul elegante */
   margin-bottom: 0.5rem;
 }
 
 .youtube-video-description {
   font-size: 1rem;
-  color: #555; /* Texto gris para la descripción */
+  color: #afafaf;
   line-height: 1.5;
 }
 

@@ -1,13 +1,25 @@
 /* Estilos para el banner degradado con temática tecnológica */
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Freeman&family=Fugaz+One&family=Squada+One&display=swap');
+
 .main-container-of-header-number-one {
+  height: 75vh; /* Ocupa el 100% del alto de la pantalla */
   margin-top: 30px;
   background: linear-gradient(180deg, #2b5876, #2a2a72, #151515); /* Fondo degradado oscuro con tonos azulados */
-  padding: 60px 20px; /* Espaciado amplio alrededor del banner */
   position: relative; /* Para permitir el posicionamiento de elementos decorativos */
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+/* Contenedor interno para organizar los elementos */
+.child-container-number-two {
+  text-align: center; /* Centra el texto horizontalmente */
+  color: #fff; /* Texto blanco para mayor contraste */
+  width: 100%; /* Asegura que el contenedor interno ocupe todo el ancho */
+  max-width: 800px; /* Establece un ancho máximo para no exceder en pantallas grandes */
+  padding: 1rem; /* Espaciado interno para asegurar que no quede pegado a los bordes */
 }
 
 /* Contenedor titulo giro banner */
@@ -17,11 +29,13 @@
 
 /* Estilos para el texto principal */
 .title-one-twist-banner {
-  font-size: 3rem;
-  font-weight: bold;
+  font-family: 'Goldman', sans-serif; /* Aplica la fuente Goldman */
   color: #f8f8f8;
   margin-bottom: 20px;
   animation: fadeInUp 1.5s ease-out; /* Animación de entrada para el texto */
+  font-size: 2rem; /* Ajusta el tamaño según el diseño */
+  font-weight: 200;  /* Uso del peso 700 para un texto más audaz */
+  margin: 0; /* Quita los márgenes predeterminados */
 }
 
 /* Animación de entrada suave para el texto */
@@ -38,10 +52,13 @@
 
 /* Estilos para el subtítulo */
 .paragraph-one-twist-banner {
-  font-size: 2.5rem;
   color: #00aeff;
-  font-weight: 300;
   animation: fadeInUp 2s ease-out; /* Suave entrada para el subtítulo */
+  font-family: 'Audiowide', sans-serif; /* Aplica la fuente Goldman */
+  font-size: 3.5rem; /* Ajusta el tamaño según el diseño */
+  font-weight: 400; /* Peso normal para este texto */
+  margin-top: 2rem; /* Espacio hacia arriba */
+  margin-bottom: 0; /* Quita el espacio inferior */
 }
 
 /* PARTICULAS ANIMADAS */
@@ -117,22 +134,59 @@
 /* Contendor de la informacion del giro banner */
 .container-header-number-three-twist-banner {
   text-align: center;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column; /* Organiza los elementos en una columna */
+  justify-content: center; /* Centra verticalmente los elementos dentro del contenedor */
+  align-items: center; /* Centra horizontalmente los elementos */
+  gap: 1rem; /* Agrega espacio entre los elementos */
 }
 
-/* Contenedor para el nombre */
+/* Barra de búsqueda centrada */
 .container-engineer-fp-twist-banner {
-  padding: 0;
+  flex-direction: column; /* Alinea elementos verticalmente */
+  align-items: center; /* Centra horizontalmente la barra de búsqueda */
+  margin-top: 1.5rem; /* Espacio superior */
 }
 
 /* Ingeniero FP */
 .text-engineer-fp-twist-banner {
-  font-size: 14px;
   color: #949494;
-  text-align: center;
+  font-size: 1rem;
+  margin-top: 0.5rem; /* Espacio por encima del texto */
 }
 
+
+/* Contenedor de las redes sociales */
+.social-media-links {
+  margin-top: 2.9rem; /* Espaciado desde la barra de búsqueda */
+  text-align: center; /* Centra horizontalmente */
+}
+
+/* Texto introductorio para redes sociales */
+.social-media-text {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #d9d9d9; /* Color oscuro moderno */
+}
+
+/* Contenedor de enlaces */
+.social-media-icons {
+  display: flex;
+  justify-content: center; /* Centra los enlaces horizontalmente */
+  gap: 1rem; /* Espacio entre los enlaces */
+  flex-wrap: wrap; /* Permite que los enlaces se acomoden en varias líneas si es necesario */
+}
+
+/* Enlaces de redes sociales */
+.social-media-icons a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #1a73e8; /* Azul para los enlaces */
+  transition: color 0.3s ease; /* Efecto suave en hover */
+}
+
+.social-media-icons a:hover {
+  color: #ff5722; /* Cambia el color al pasar el cursor */
+}
 
 
 

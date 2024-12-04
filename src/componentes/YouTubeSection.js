@@ -6,7 +6,7 @@ function YouTubeSection() {
   return (
     <section className="youtube-section">
       {/* Título de la sección */}
-      <h2 className="youtube-section-title">Explora mis Videos en YouTube</h2>
+      <h2 className="youtube-section-title">Contenido educativo en YouTube</h2>
       <div className="youtube-videos-container">
         {youtubeVideos.map((video) => (
           <div key={video.id} className="youtube-video-card">
